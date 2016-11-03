@@ -4129,11 +4129,23 @@ html[lang="nm"] .wiki-page-content a[href*="#wiki-"],
 
 .listing-page .stickied.link {
     border: 1px solid #8463e6!important;
+<<<<<<< HEAD
+    background-color: #e2daf9!important;
+}
+
+.comments-page .stickied.link {
+	border: 1px solid #8463e6!important;
+}
+
+html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
+    background-color:#3c3550!important;
+=======
     background-color: #c7b8f4!important;
 }
 
 html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
     background-color: #0b051e!important;
+>>>>>>> origin/master
 }
 
 .listing-page div.RES-keyNav-activeElement {
@@ -4292,6 +4304,19 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 
 .res-nightmode .wiki-page .pageactions .wikiaction-current {
     background-color: transparent;
+}
+
+.res-nightmode .side .submit .morelink {
+	background-color: #6941E1!important;
+	transition: .2s ease;
+}
+
+.res-nightmode .side .submit .morelink:hover {
+	background-color: #492d9d!important;
+}
+
+.res-nightmode .side .submit .morelink:hover a {
+  color:white!important;
 }
 
 /*
