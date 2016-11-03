@@ -2968,7 +2968,7 @@ form#image-upload.image-upload {
 #siteTable .thing .md p a:hover,
 .commentarea .thing .md p a:hover {
 	box-shadow: 2px 2px 4px silver;
-
+	background-color: #ececec;
 }
 #siteTable .thing .md p a:hover {
   background-color: #dddddd;
@@ -4125,6 +4125,51 @@ html[lang="nm"] .wiki-page-content a[href*="#wiki-"],
 	box-shadow:3px 3px 5px rgba(25,41,180,.4);
 }
 
+/* STICKIED LINK COLORS & GETTING RID OF RES-ACTIVE ELEMENT HIGHLIGHT*/
+
+.listing-page .stickied.link {
+    border: 1px solid #8463e6!important;
+    background-color: #e2daf9!important;
+}
+
+.comments-page .stickied.link {
+	border: 1px solid #8463e6!important;
+}
+
+html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
+    background-color:#3c3550!important;
+}
+
+.listing-page div.RES-keyNav-activeElement {
+	background-color: transparent!important;
+}
+
+/*I've been trying to get rid of the RES active element highlight for several hours but to no avail. Below are my attempts, commented out
+because they do not work.*/
+
+/*html[lang="nm"] div.comments-page div.RES-keyNav-activeElement,
+.res-nightmode div.comments-page div.RES-keyNav-activeElement {
+	background-color: #292929!important;
+}
+
+div.commentarea div.RES-keyNav-activeElement .md {
+	background-color: #fff!important;
+}
+
+html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
+    background-color: #0b051e!important;
+}
+
+.listing-page .stickied.link .RES-keyNav-activeElement, .listing-page .stickied.link .RES-keyNav-activeElement .md-container {
+    background-color: #c7b8f4 !important;
+}
+
+html[lang=nm] .listing-page .stickied.link .RES-keyNav-activeElement, html[lang=nm] .listing-page .stickied.link .RES-keyNav-activeElement .md-container,
+.res-nightmode .listing-page .stickied.link .RES-keyNav-activeElement,.res-nightmode .listing-page .stickied.link .RES-keyNav-activeElement .md-container {
+	background-color: #0b051e!important;
+}*/
+
+
 /* NSFW Button Customization*/
 
 .over18.link {
@@ -4251,6 +4296,19 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 
 .res-nightmode .wiki-page .pageactions .wikiaction-current {
     background-color: transparent;
+}
+
+.res-nightmode .side .submit .morelink {
+	background-color: #6941E1!important;
+	transition: .2s ease;
+}
+
+.res-nightmode .side .submit .morelink:hover {
+	background-color: #492d9d!important;
+}
+
+.res-nightmode .side .submit .morelink:hover a {
+  color:white!important;
 }
 
 /*
