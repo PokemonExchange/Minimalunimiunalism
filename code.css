@@ -4152,12 +4152,7 @@ a[href*="#btn"]:hover {
 }
 
 html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
-    background-color:#3c3550!important;
     background-color: #c7b8f4!important;
-}
-
-html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
-    background-color: #0b051e!important;
 }
 
 .listing-page div.RES-keyNav-activeElement {
@@ -4336,10 +4331,13 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 	transition: .2s ease;
 }
 
+<<<<<<< HEAD
 .res-nightmode .morelink a {
 	color: #fff!important;
 }
 
+=======
+>>>>>>> origin/master
 .res-nightmode .side .submit .morelink:hover {
 	background-color: #492d9d!important;
 }
@@ -4348,6 +4346,7 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
   color:white!important;
 }
 
+<<<<<<< HEAD
 .res-nightmode .wiki-page .wiki-page-content .md.wiki > .toc ul {
 	background-color: transparent!important;
 }
@@ -4369,6 +4368,8 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 .res-nightmode .linkflairlabel {
 	color: #fff!important;
 }
+=======
+>>>>>>> origin/master
 /*
 
 Credits
