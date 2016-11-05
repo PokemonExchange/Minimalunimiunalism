@@ -1156,7 +1156,7 @@ html[lang="nm"] .usertext.border .usertext-body {
 /*SUBMIT PAGE*/
 .submit-page .submit_text {width: 640px !important;}
 
-	.submit-page .submit_text.enabled {text-transform: none !important;}
+	.submit-page .submit_text.enabled {text-transform: none !important;margin-bottom: -22px;margin-top: -10px;}
 
 .formtabs-content .infobar {display: none !important;}
 
@@ -2433,15 +2433,21 @@ body.res .RESshortcutside:active,
 	font: 700 12px sans-serif;
  }
 
-.side a[href*='#tag-bp'], .side a[href*='#tag-sp'], .side a[href*='#tag-bv'], .side a[href*='#tag-sv'], .side a[href*='#tag-h'],
-.side a[href*='#tag-t'], .side a[href*='#tag-p'], .side a[href*='#tag-m'], .side a[href*='#tag-g'] {
-	min-width: 102px!important;
-	border: 0px none;
-	margin-left: 46px;
-	text-align: center;
-	font-size: 13px;
-	display: inline-table;
-}
+ .side a[href*='#tag-bp'], .side a[href*='#tag-sp'], .side a[href*='#tag-bv'], .side a[href*='#tag-sv'], .side a[href*='#tag-h'],
+ .side a[href*='#tag-t'], .side a[href*='#tag-p'], .side a[href*='#tag-m'], .side a[href*='#tag-g'] {
+ 	min-width: 102px!important;
+ 	border: 0px none;
+ 	margin-left: 46px;
+ 	text-align: center;
+ 	font-size: 13px;
+ 	display: inline-table;
+ }
+
+ .submit-page a[href*='#tag-bp'], .submit-page a[href*='#tag-sp'], .submit-page a[href*='#tag-bv'], .submit-page a[href*='#tag-sv'], .submit-page a[href*='#tag-h'],
+ .submit-page a[href*='#tag-t'], .submit-page a[href*='#tag-p'], .submit-page a[href*='#tag-m'], .submit-page a[href*='#tag-g'] {
+ 	min-width: 84px!important;
+ 	display: inline-table;
+ }
 
 .linkflair-lightred .linkflairlabel,
 .linkflair-darkred .linkflairlabel,
@@ -2460,15 +2466,15 @@ body.res .RESshortcutside:active,
 }
 
 /*DEFAULT BACKGROUND*/
-.linkflair-lightred .linkflairlabel, .side a[href*='#tag-bp'], .wiki-page-content a[href*='#tag-bp'] {background: #ff2727;}
-.linkflair-darkred .linkflairlabel, .side a[href*='#tag-sp'], .wiki-page-content a[href*='#tag-sp'] {background: #d10001;}
-.linkflair-lightblue .linkflairlabel, .side a[href*='#tag-bv'], .wiki-page-content a[href*='#tag-bv'] {background:#1dafd9}
-.linkflair-darkblue .linkflairlabel, .side a[href*='#tag-sv'], .wiki-page-content a[href*='#tag-sv'] {background:#0000d8;}
-.linkflair-lightpurple .linkflairlabel, .side a[href*='#tag-h'], .wiki-page-content a[href*='#tag-h'] {background:#b46dd4;}
-.linkflair-teal .linkflairlabel, .side a[href*='#tag-t'], .wiki-page-content a[href*='#tag-t'] {background: #00daaa;}
-.linkflair-yellow .linkflairlabel, .side a[href*='#tag-p'], .wiki-page-content a[href*='#tag-p'] {background:#d9b614;}
-.linkflair-darkpurple .linkflairlabel, .side a[href*='#tag-m'], .wiki-page-content a[href*='#tag-m'] {background:#6941e1;}
-.linkflair-green .linkflairlabel, .side a[href*='#tag-g'], .wiki-page-content a[href*='#tag-g'] {background:#37d326;}
+.linkflair-lightred .linkflairlabel, .res-nightmode .linkflair-lightred .linkflairlabel, .side a[href*='#tag-bp'], .submit-page a[href*='#tag-bp'], .wiki-page-content a[href*='#tag-bp'] {background: #ff2727; color:#fff!important;}
+.linkflair-darkred .linkflairlabel, .res-nightmode .linkflair-darkred .linkflairlabel, .side a[href*='#tag-sp'],.submit-page a[href*='#tag-sp'], .wiki-page-content a[href*='#tag-sp'] {background: #d10001; color:#fff!important;}
+.linkflair-lightblue .linkflairlabel,.res-nightmode .linkflair-lightblue .linkflairlabel, .side a[href*='#tag-bv'],.submit-page a[href*='#tag-bv'], .wiki-page-content a[href*='#tag-bv'] {background:#1dafd9; color:#fff!important;}
+.linkflair-darkblue .linkflairlabel,.res-nightmode .linkflair-darkblue .linkflairlabel, .side a[href*='#tag-sv'],.submit-page a[href*='#tag-sv'], .wiki-page-content a[href*='#tag-sv'] {background:#0000d8; color:#fff!important;}
+.linkflair-lightpurple .linkflairlabel,.res-nightmode .linkflair-lightpurple .linkflairlabel, .side a[href*='#tag-h'],.submit-page a[href*='#tag-h'], .wiki-page-content a[href*='#tag-h'] {background:#b46dd4; color:#fff!important;}
+.linkflair-teal .linkflairlabel,.res-nightmode .linkflair-teal .linkflairlabel, .side a[href*='#tag-t'],.submit-page a[href*='#tag-t'], .wiki-page-content a[href*='#tag-t'] {background: #00daaa; color:#fff!important;}
+.linkflair-yellow .linkflairlabel,.res-nightmode .linkflair-yellow .linkflairlabel, .side a[href*='#tag-p'],.submit-page a[href*='#tag-p'], .wiki-page-content a[href*='#tag-p'] {background:#d9b614; color:#fff!important;}
+.linkflair-darkpurple .linkflairlabel,.res-nightmode .linkflair-darkpurple .linkflairlabel, .side a[href*='#tag-m'],.submit-page a[href*='#tag-m'], .wiki-page-content a[href*='#tag-m'] {background:#6941e1; color:#fff!important;}
+.linkflair-green .linkflairlabel,.res-nightmode .linkflair-green .linkflairlabel, .side a[href*='#tag-g'],.submit-page a[href*='#tag-g'], .wiki-page-content a[href*='#tag-g'] {background:#37d326; color:#fff!important;}
 
 /*HOVER BACKGROUND*/
 .linkflair-lightred .linkflairlabel:hover {background: #ff2727!important;}
@@ -3658,6 +3664,7 @@ html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/nintendoexchange"] 
 #header {
    background : url(%%banner%%);
    background-size: auto 225px;
+	 background-repeat: no-repeat;
 }
 
 /*NM HEADER*/
@@ -3860,6 +3867,10 @@ content: " Pokemon trainers"
 .users-online .number:after {
 content: " training to be the very best"
 }
+
+/*Hiding domain*/
+
+.domain {display: none;}
 
 /* Renaming Users */
 
@@ -4125,6 +4136,10 @@ html[lang="nm"] .wiki-page-content a[href*="#wiki-"],
 	box-shadow:3px 3px 5px rgba(25,41,180,.4);
 }
 
+a[href*="#btn"]:hover {
+	background-color: #0079d3!important;
+}
+
 /* STICKIED LINK COLORS & GETTING RID OF RES-ACTIVE ELEMENT HIGHLIGHT*/
 
 .listing-page .stickied.link {
@@ -4138,6 +4153,11 @@ html[lang="nm"] .wiki-page-content a[href*="#wiki-"],
 
 html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
     background-color:#3c3550!important;
+    background-color: #c7b8f4!important;
+}
+
+html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
+    background-color: #0b051e!important;
 }
 
 .listing-page div.RES-keyNav-activeElement {
@@ -4224,6 +4244,19 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 	margin-top: -2px;
 }
 
+/* FIX SUBMIT PAGE SUBMIT TEXT LOCATION*/
+
+.submit .formtabs-content {
+    display: flex;
+    flex-direction: column;
+}
+.submit .formtabs-content .spacer ~ .spacer {
+    margin-top: 0px;
+}
+.submit .formtabs-content > div:nth-of-type(4) {
+    order: -1;
+}
+
 /*Misc RES Night Mode Fixes*/
 
 .res-nightmode .RES-keyNav-activeElement > .tagline, .res-nightmode .RES-keyNav-activeElement .md-container > .md, .res-nightmode .RES-keyNav-activeElement .md-container > .md p {
@@ -4247,14 +4280,14 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
     background-color: #333;
 }
 
-.res-nightmode .side .titlebox form.flairtoggle, .res-nightmode .trophy-area .content, .res-nightmode .side .md ol, .res-nightmode .side .md ul {
+.res-nightmode .side .titlebox form.flairtoggle, .res-nightmode .trophy-area .content, .res-nightmode .side .md ol {
     background-color: #333;
     color: rgb(221, 221, 221);
 }
 
-.res-nightmode body, .res-nightmode body .content, .res-nightmode .modal-body, .res-nightmode .side, .res-nightmode .icon-menu a, .res-nightmode .side .leavemoderator, .res-nightmode .side .leavecontributor-button, .res-nightmode .side .titlebox, .res-nightmode .side .spacer .titlebox .redditname, .res-nightmode .side .titlebox .flairtoggle, .res-nightmode .side .usertext-body .md ol,
+.res-nightmode body .content, .res-nightmode .modal-body, .res-nightmode .side, .res-nightmode .icon-menu a, .res-nightmode .side .leavemoderator, .res-nightmode .side .leavecontributor-button, .res-nightmode .side .titlebox, .res-nightmode .side .spacer .titlebox .redditname, .res-nightmode .side .titlebox .flairtoggle,
 .res-nightmode .side .usertext-body .md ol ol, .res-nightmode .side .usertext-body .md ol ol li, .res-nightmode .modactionlisting table *, .res-nightmode .side .recommend-box .rec-item {
-    background-color: #333;
+    background-color: #333!important;
     border-color: rgb(119, 119, 119);
 }
 
@@ -4264,7 +4297,7 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
     background-color:transparent!important;
 }
 
-.res-nightmode .tagline .moderator {color:#c0c0c0;}
+.res-nightmode .tagline .moderator {color:#c0c0c0!important;}
 
 .res-nightmode .rank .star, .res-nightmode .link .score.likes, .res-nightmode .linkcompressed .score.likes {color:#6941E1;}
 
@@ -4290,7 +4323,7 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 }
 
 .res-nightmode #sr-header-area, .res-nightmode #sr-more-link {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.5)!important;
     color:#fff;
 }
 
@@ -4303,6 +4336,10 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 	transition: .2s ease;
 }
 
+.res-nightmode .morelink a {
+	color: #fff!important;
+}
+
 .res-nightmode .side .submit .morelink:hover {
 	background-color: #492d9d!important;
 }
@@ -4311,6 +4348,27 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
   color:white!important;
 }
 
+.res-nightmode .wiki-page .wiki-page-content .md.wiki > .toc ul {
+	background-color: transparent!important;
+}
+
+/*.res-nightmode body .content, .res-nightmode .side, .res-nightmode .icon-menu a,
+.res-nightmode .side .leavemoderator, .res-nightmode .side .leavecontributor-button, .res-nightmode .side .titlebox,
+.res-nightmode .side .spacer .titlebox .redditname, .res-nightmode .side .titlebox .flairtoggle, .res-nightmode .side .usertext-body .md ol,
+.res-nightmode .side .usertext-body .md ol ol, .res-nightmode .side .usertext-body .md ol ol li, .res-nightmode .modactionlisting table *,
+.res-nightmode .side .recommend-box .rec-item {
+    background-color: #333!important;
+}*/
+
+.res-nightmode body {background-color: #262626!important}
+
+.res-nightmode .side .titlebox form.flairtoggle, .res-nightmode .trophy-area .content, .res-nightmode .side .md ol {
+    background-color: #333!important;
+}
+
+.res-nightmode .linkflairlabel {
+	color: #fff!important;
+}
 /*
 
 Credits
