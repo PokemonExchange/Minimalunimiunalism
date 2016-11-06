@@ -1419,13 +1419,11 @@ body:not(.comments-page) div.content .entry {
 	padding-top: 5px;
 }
 
-.RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
-    padding-left: 15px !important;
-    border-left: 3px solid #6941E1;
-}
-
-div.commentarea div.RES-keyNav-activeElement .md {
-    background-color: transparent !important;
+div.RES-keyNav-activeElement,
+div.RES-keyNav-activeElement .md-container {
+	background-color: transparent!important;
+	padding-left: 15px !important;
+	border-left: 3px solid #6941E1;
 }
 
 /*Body background*/
@@ -1745,26 +1743,6 @@ h2 {
     animation-duration: 1.2s;
     animation-name: godown;
 }
-/* @keyframes godown {
-0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
-100% {opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}
-}
-
-@-moz-keyframes godown {
-0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
-100% {opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}
-}
-
-@-webkit-keyframes godown {
-0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
-100% {opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}
-}
-
-@-o-keyframes godown {
-0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
-100% {opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}
-}*/
-
 .pagename a {
 	height: 100px;
 	width: 200px;
@@ -2278,22 +2256,6 @@ body.res .RESshortcutside:active,
 	display: block;
  }
 
-/*BUTTONS ON SIDEBAR - Buttonstyle two */
-/*.side .titlebox .md h4 a {
-	border-radius: 3.5px;
-	padding: 8px 0px;
-	border: none;
-	color: #fff;
-	letter-spacing: 0;
-	font-weight: bold;
-	text-align: center;
-	transition: .3s background ease;
-	font-size: 12px !important;
-	width: 276px;
-	margin: 1.5em 0;
-	display: block;
- }*/
-
 .titlebox .bottom {display: none}
 
 .sidecontentbox .collapse-button {
@@ -2336,25 +2298,25 @@ body.res .RESshortcutside:active,
 .entry .buttons li a, .entry .buttons li + li {font-weight: normal;}
 
 /*FLAIRS*/
-.flair-lightredflair[title]:hover {background: #ff0000;}
-.flair-darkredflair[title]:hover {background: #aa0001;}
-.flair-lightblueflair[title]:hover {background:#1893b6;}
-.flair-darkblueflair[title]:hover {background:#0000b1;}
-.flair-lightpurpleflair[title]:hover {background:#a44fcb;}
-.flair-tealflair[title]:hover {background: #00b38b;}
-.flair-yellowflair[title]:hover {background:#b59811;}
-.flair-darkpurpleflair[title]:hover {background:#5022d9;}
-.flair-greenflair[title]:hover {background:#2eb220;}
+.flair-bphysicalflair[title]:hover {background: #ff0000;}
+.flair-sphysicalflair[title]:hover {background: #aa0001;}
+.flair-bvirtualflair[title]:hover {background:#1893b6;}
+.flair-svirtualflair[title]:hover {background:#0000b1;}
+.flair-hackedflair[title]:hover {background:#a44fcb;}
+.flair-tradeflair[title]:hover {background: #00b38b;}
+.flair-ptcgoflair[title]:hover {background:#b59811;}
+.flair-modflair[title]:hover {background:#5022d9;}
+.flair-giveawayflair[title]:hover {background:#2eb220;}
 
-.flair-lightredflair[title],
-.flair-darkredflair[title],
-.flair-lightblueflair[title],
-.flair-darkblueflair[title],
-.flair-lightpurpleflair[title],
-.flair-tealflair[title],
-.flair-yellowflair[title],
-.flair-darkpurpleflair[title],
-.flair-greenflair[title], {
+.flair-bphysicalflair[title],
+.flair-sphysicalflair[title],
+.flair-bvirtualflair[title],
+.flair-svirtualflair[title],
+.flair-hackedflair[title],
+.flair-tradeflair[title],
+.flair-ptcgoflair[title],
+.flair-modflair[title],
+.flair-giveawayflair[title], {
 	color: white;
 	font-size: 10px;
 	padding: 0px 10px 0px 0px;
@@ -2365,15 +2327,15 @@ body.res .RESshortcutside:active,
 	border-radius: 20px;
 }
 
-.flair-lightredflair[title]:before,
-.flair-darkredflair[title]:before,
-.flair-lightblueflair[title]:before,
-.flair-darkblueflair[title]:before,
-.flair-lightpurpleflair[title]:before,
-.flair-tealflair[title]:before,
-.flair-yellowflair[title]:before,
-.flair-darkpurpleflair[title]:before,
-.flair-greenflair[title]:before, {
+.flair-bphysicalflair[title]:before,
+.flair-sphysicalflair[title]:before,
+.flair-bvirtualflair[title]:before,
+.flair-svirtualflair[title]:before,
+.flair-hackedflair[title]:before,
+.flair-tradeflair[title]:before,
+.flair-ptcgoflair[title]:before,
+.flair-modflair[title]:before,
+.flair-giveawayflair[title]:before, {
 	font-weight: Bold;
 	display: inline-block;
 	font-size: 10px;
@@ -2382,25 +2344,25 @@ body.res .RESshortcutside:active,
 	margin-right: 8px;
 }
 
-.flair-lightredflair[title] {background: #ff2727;}
-.flair-darkredflair[title] {background: #d10001;}
-.flair-lightblueflair[title] {background:#1dafd9}
-.flair-darkblueflair[title] {background:#0000d8;}
-.flair-lightpurpleflair[title] {background:#b46dd4;}
-.flair-tealflair[title] {background: #00daaa;}
-.flair-yellowflair[title] {background:#d9b614;}
-.flair-darkpurpleflair[title] {background:#6941e1;}
-.flair-greenflair[title] {background:#37d326;}
+.flair-bphysicalflair[title] {background: #ff2727;}
+.flair-sphysicalflair[title] {background: #d10001;}
+.flair-bvirtualflair[title] {background:#1dafd9}
+.flair-svirtualflair[title] {background:#0000d8;}
+.flair-hackedflair[title] {background:#b46dd4;}
+.flair-tradeflair[title] {background: #00daaa;}
+.flair-ptcgoflair[title] {background:#d9b614;}
+.flair-modflair[title] {background:#6941e1;}
+.flair-giveawayflair[title] {background:#37d326;}
 
-.flair-lightredflair[title]:before {background: #ff0000;}
-.flair-darkredflair[title]:before {background: #aa0001;}
-.flair-lightblueflair[title]:before {background:#1893b6;}
-.flair-darkblueflair[title]:before {background:#0000b1;}
-.flair-lightpurpleflair[title]:before {background:#a44fcb;}
-.flair-tealflair[title]:before {background: #00b38b;}
-.flair-yellowflair[title]:before {background:#b59811;}
-.flair-darkpurpleflair[title]:before {background:#5022d9;}
-.flair-greenflair[title]:before {background:#2eb220;}
+.flair-bphysicalflair[title]:before {background: #ff0000;}
+.flair-sphysicalflair[title]:before {background: #aa0001;}
+.flair-bvirtualflair[title]:before {background:#1893b6;}
+.flair-svirtualflair[title]:before {background:#0000b1;}
+.flair-hackedflair[title]:before {background:#a44fcb;}
+.flair-tradeflair[title]:before {background: #00b38b;}
+.flair-ptcgoflair[title]:before {background:#b59811;}
+.flair-modflair[title]:before {background:#5022d9;}
+.flair-giveawayflair[title]:before {background:#2eb220;}
 
 
 
@@ -2449,15 +2411,15 @@ body.res .RESshortcutside:active,
  	display: inline-table;
  }
 
-.linkflair-lightred .linkflairlabel,
-.linkflair-darkred .linkflairlabel,
-.linkflair-lightblue .linkflairlabel,
-.linkflair-darkblue .linkflairlabel,
-.linkflair-lightpurple .linkflairlabel,
-.linkflair-teal .linkflairlabel,
-.linkflair-yellow .linkflairlabel,
-.linkflair-darkpurple .linkflairlabel,
-.linkflair-green .linkflairlabel {
+.linkflair-bphysical .linkflairlabel,
+.linkflair-sphysical .linkflairlabel,
+.linkflair-bvirtual .linkflairlabel,
+.linkflair-svirtual .linkflairlabel,
+.linkflair-hacked .linkflairlabel,
+.linkflair-trade .linkflairlabel,
+.linkflair-ptcgo .linkflairlabel,
+.linkflair-mod .linkflairlabel,
+.linkflair-giveaway .linkflairlabel {
 	color: white;
 	font-weight: Bold;
 	border-radius: 20px;
@@ -2466,26 +2428,26 @@ body.res .RESshortcutside:active,
 }
 
 /*DEFAULT BACKGROUND*/
-.linkflair-lightred .linkflairlabel, .res-nightmode .linkflair-lightred .linkflairlabel, .side a[href*='#tag-bp'], .submit-page a[href*='#tag-bp'], .wiki-page-content a[href*='#tag-bp'] {background: #ff2727; color:#fff!important;}
-.linkflair-darkred .linkflairlabel, .res-nightmode .linkflair-darkred .linkflairlabel, .side a[href*='#tag-sp'],.submit-page a[href*='#tag-sp'], .wiki-page-content a[href*='#tag-sp'] {background: #d10001; color:#fff!important;}
-.linkflair-lightblue .linkflairlabel,.res-nightmode .linkflair-lightblue .linkflairlabel, .side a[href*='#tag-bv'],.submit-page a[href*='#tag-bv'], .wiki-page-content a[href*='#tag-bv'] {background:#1dafd9; color:#fff!important;}
-.linkflair-darkblue .linkflairlabel,.res-nightmode .linkflair-darkblue .linkflairlabel, .side a[href*='#tag-sv'],.submit-page a[href*='#tag-sv'], .wiki-page-content a[href*='#tag-sv'] {background:#0000d8; color:#fff!important;}
-.linkflair-lightpurple .linkflairlabel,.res-nightmode .linkflair-lightpurple .linkflairlabel, .side a[href*='#tag-h'],.submit-page a[href*='#tag-h'], .wiki-page-content a[href*='#tag-h'] {background:#b46dd4; color:#fff!important;}
-.linkflair-teal .linkflairlabel,.res-nightmode .linkflair-teal .linkflairlabel, .side a[href*='#tag-t'],.submit-page a[href*='#tag-t'], .wiki-page-content a[href*='#tag-t'] {background: #00daaa; color:#fff!important;}
-.linkflair-yellow .linkflairlabel,.res-nightmode .linkflair-yellow .linkflairlabel, .side a[href*='#tag-p'],.submit-page a[href*='#tag-p'], .wiki-page-content a[href*='#tag-p'] {background:#d9b614; color:#fff!important;}
-.linkflair-darkpurple .linkflairlabel,.res-nightmode .linkflair-darkpurple .linkflairlabel, .side a[href*='#tag-m'],.submit-page a[href*='#tag-m'], .wiki-page-content a[href*='#tag-m'] {background:#6941e1; color:#fff!important;}
-.linkflair-green .linkflairlabel,.res-nightmode .linkflair-green .linkflairlabel, .side a[href*='#tag-g'],.submit-page a[href*='#tag-g'], .wiki-page-content a[href*='#tag-g'] {background:#37d326; color:#fff!important;}
+.linkflair-bphysical .linkflairlabel, .res-nightmode .linkflair-bphysical .linkflairlabel, .side a[href*='#tag-bp'], .submit-page a[href*='#tag-bp'], .wiki-page-content a[href*='#tag-bp'] {background: #ff2727; color:#fff!important;}
+.linkflair-sphysical .linkflairlabel, .res-nightmode .linkflair-sphysical .linkflairlabel, .side a[href*='#tag-sp'],.submit-page a[href*='#tag-sp'], .wiki-page-content a[href*='#tag-sp'] {background: #d10001; color:#fff!important;}
+.linkflair-bvirtual .linkflairlabel,.res-nightmode .linkflair-bvirtual .linkflairlabel, .side a[href*='#tag-bv'],.submit-page a[href*='#tag-bv'], .wiki-page-content a[href*='#tag-bv'] {background:#1dafd9; color:#fff!important;}
+.linkflair-svirtual .linkflairlabel,.res-nightmode .linkflair-svirtual .linkflairlabel, .side a[href*='#tag-sv'],.submit-page a[href*='#tag-sv'], .wiki-page-content a[href*='#tag-sv'] {background:#0000d8; color:#fff!important;}
+.linkflair-hacked .linkflairlabel,.res-nightmode .linkflair-hacked .linkflairlabel, .side a[href*='#tag-h'],.submit-page a[href*='#tag-h'], .wiki-page-content a[href*='#tag-h'] {background:#b46dd4; color:#fff!important;}
+.linkflair-trade .linkflairlabel,.res-nightmode .linkflair-trade .linkflairlabel, .side a[href*='#tag-t'],.submit-page a[href*='#tag-t'], .wiki-page-content a[href*='#tag-t'] {background: #00daaa; color:#fff!important;}
+.linkflair-ptcgo .linkflairlabel,.res-nightmode .linkflair-ptcgo .linkflairlabel, .side a[href*='#tag-p'],.submit-page a[href*='#tag-p'], .wiki-page-content a[href*='#tag-p'] {background:#d9b614; color:#fff!important;}
+.linkflair-mod .linkflairlabel,.res-nightmode .linkflair-mod .linkflairlabel, .side a[href*='#tag-m'],.submit-page a[href*='#tag-m'], .wiki-page-content a[href*='#tag-m'] {background:#6941e1; color:#fff!important;}
+.linkflair-giveaway .linkflairlabel,.res-nightmode .linkflair-giveaway .linkflairlabel, .side a[href*='#tag-g'],.submit-page a[href*='#tag-g'], .wiki-page-content a[href*='#tag-g'] {background:#37d326; color:#fff!important;}
 
 /*HOVER BACKGROUND*/
-.linkflair-lightred .linkflairlabel:hover {background: #ff2727!important;}
-.linkflair-darkred .linkflairlabel:hover {background: #d10001!important;}
-.linkflair-lightblue .linkflairlabel:hover {background:#1dafd9!important;}
-.linkflair-darkblue .linkflairlabel:hover {background:#0000d8!important;}
-.linkflair-lightpurple .linkflairlabel:hover {background:#b46dd4!important;}
-.linkflair-teal .linkflairlabel:hover {background: #00daaa!important;}
-.linkflair-yellow .linkflairlabel:hover {background:#d9b614!important;}
-.linkflair-darkpurple .linkflairlabel:hover {background:#6941e1!important;}
-.linkflair-green .linkflairlabel:hover {background:#37d326!important;}
+.linkflair-bphysical .linkflairlabel:hover {background: #ff2727!important;}
+.linkflair-sphysical .linkflairlabel:hover {background: #d10001!important;}
+.linkflair-bvirtual .linkflairlabel:hover {background:#1dafd9!important;}
+.linkflair-svirtual .linkflairlabel:hover {background:#0000d8!important;}
+.linkflair-hacked .linkflairlabel:hover {background:#b46dd4!important;}
+.linkflair-trade .linkflairlabel:hover {background: #00daaa!important;}
+.linkflair-ptcgo .linkflairlabel:hover {background:#d9b614!important;}
+.linkflair-mod .linkflairlabel:hover {background:#6941e1!important;}
+.linkflair-giveaway .linkflairlabel:hover {background:#37d326!important;}
 
 /*CLOSED LINKFLAIR*/
 .listing-page .over18.link .linkflairlabel:before {
@@ -2999,8 +2961,15 @@ form#image-upload.image-upload {
 .wiki-page-content .md ol li,
 .commentarea .thing .md ol li {
   border-bottom: solid 1px #eaeaea;
-  background-color: #f8f8f8;
   padding: 5px;
+}
+#siteTable .thing .md ul li:nth-child(even),
+.wiki-page-content .md ul li:nth-child(even),
+.commentarea .md ul li:nth-child(even),
+#siteTable .thing .md ol li:nth-child(even),
+.wiki-page-content .md ol li:nth-child(even),
+.commentarea .thing .md ol li:nth-child(even) {
+	background-color: #f8f8f8;
 }
 #siteTable .thing .md ul li:nth-child(odd),
 .wiki-page-content .md ul li:nth-child(odd),
@@ -3008,12 +2977,12 @@ form#image-upload.image-upload {
 #siteTable .thing .md ol li:nth-child(odd),
 .wiki-page-content .md ol li:nth-child(odd),
 .commentarea .thing .md ol li:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: #f2f2f2!important;
 }
 #siteTable .thing .md ul,
 .wiki-page-content .md ul,
 .commentarea .md ul {
-  list-style: none;
+  list-style-type: none;
 }
 #siteTable .thing .md ol,
 .wiki-page-content .md ol,
@@ -3058,9 +3027,22 @@ form#image-upload.image-upload {
   border: none;
 }
 #siteTable .thing .md table tbody tr,
-.commentarea .thing .md table thead tr th,
+.commentarea .thing .md table tbody tr,
 .wiki-page-content .md table tbody tr {
   border-bottom: solid 1px #eaeaea;
+}
+#siteTable .thing .md table tbody tr:nth-child(even),
+.commentarea .thing .md table tbody tr:nth-child(even),
+.wiki-page-content .md table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+.res-nightmode #siteTable .thing .md table tbody tr:nth-child(even),
+.res-nightmode .commentarea .thing .md table tbody tr:nth-child(even),
+.res-nightmode .wiki-page-content .md table tbody tr:nth-child(even),
+hmtl[lang="nm"] #siteTable .thing .md table tbody tr:nth-child(even),
+hmtl[lang="nm"] .commentarea .thing .md table tbody tr:nth-child(even),
+hmtl[lang="nm"] .wiki-page-content .md table tbody tr:nth-child(even) {
+  background-color: #2f2f2f;
 }
 #siteTable .thing .md table tbody tr td,
 .commentarea .thing .md table tbody tr td,
@@ -3192,7 +3174,7 @@ html[lang="nm"] #siteTable .thing .md table thead tr th,
 .thing.link.stickied .entry li .comments, .thing.link.stickied a.title {
     color: #6941E1!important;
 }
-.tagline .moderator, .green, .search-result-meta .moderator {
+.tagline .moderator, .giveaway, .search-result-meta .moderator {
     color: #6941E1;
 }
 .tagline .stickied-tagline, .search-result-meta .stickied-tagline {
@@ -3205,7 +3187,7 @@ html[lang="nm"] #siteTable .thing .md table thead tr th,
 
 /*NIGHT MODE COLORING*/
 
-html[lang="nm"] .linkinfo .shortlink input,.res-nightmode .linkinfo .shortlink input {background: #444;}
+html[lang="nm"] .linkinfo .shortlink input,.res-nightmode .linkinfo .shortlink input {background: #6941E1;}
 
 html[lang="nm"] #siteTable .thing .md blockquote,
 html[lang="nm"]  .wiki-page-content .md blockquote,
@@ -3218,9 +3200,6 @@ html[lang="nm"] .commentarea .md blockquote,
     background-color: #2f2f2f;
     color: #fff;
 }
-
-html[lang="nm"] #siteTable .thing .md table thead tr th,
-.res-nightmode #siteTable .thing .md table thead tr th {background: #333;}
 
 html[lang="nm"]  .wiki-page-content .md table thead tr th,
 .res-nightmode  .wiki-page-content .md table thead tr th, {background: #6941E1;}
@@ -3268,6 +3247,19 @@ html[lang="nm"] .wiki-page-content .md ol li,
   border-bottom: solid 1px #555;
   background-color: #222;
   padding: 5px;
+}
+
+html[lang="nm"] #siteTable .thing .md ul li:nth-child(odd),
+html[lang="nm"] .commentarea .md ul li:nth-child(odd),
+html[lang="nm"] #siteTable .thing .md ol li:nth-child(odd),
+html[lang="nm"] .commentarea .thing .md ol li:nth-child(odd),
+html[lang="nm"] .wiki-page-content .md ol li:nth-child(odd),
+.res-nightmode #siteTable .thing .md ul li:nth-child(odd),
+.res-nightmode .commentarea .md ul li:nth-child(odd),
+.res-nightmode #siteTable .thing .md ol li:nth-child(odd):nth-child(odd),
+.res-nightmode .commentarea .thing .md ol li:nth-child(odd),
+.res-nightmode .wiki-page-content .md ol li:nth-child(odd) {
+	background-color: #2e2e2e!important;
 }
 
 html[lang="nm"] #siteTable .thing .md ul,
@@ -3376,12 +3368,16 @@ html[lang="nm"] .icon-menu a,.res-nightmode .icon-menu a {color: #fff}
 
 html[lang="nm"] .sidecontentbox .title h1,.res-nightmode .sidecontentbox .title h1 {color: #fff;font-weight:700}
 
-html[lang="nm"] .side .titlebox .md h3 a,.res-nightmode .side .titlebox .md h3 a {background: #444}
+html[lang="nm"] .side .titlebox .md h3 a,.res-nightmode .side .titlebox .md h3 a {background: #6941E1}
 
-html[lang="nm"] .side .titlebox .md h3 a:hover,.res-nightmode .side .titlebox .md h3 a:hover {background: #666}
+html[lang="nm"] .side .titlebox .md h3 a:hover,.res-nightmode .side .titlebox .md h3 a:hover {background: #492d9d}
 
 html[lang="nm"] .side .titlebox .md h3 a:active,
-.res-nightmode .side .titlebox .md h3 a:active {background: #222}
+.res-nightmode .side .titlebox .md h3 a:active {background: #6941E1}
+
+html[lang="nm"] .side .titlebox .md h4 a,
+.res-nightmode .side .titlebox .md h4 a
+ {background: #6941E1!important}
 
 html[lang="nm"] .titlebox span.subscribers,html[lang="nm"] .titlebox .users-online,
 .res-nightmode .titlebox span.subscribers,.res-nightmode .titlebox .users-online {color: #fff!important}
@@ -3396,7 +3392,7 @@ html[lang="nm"] body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,html[l
 
 html[lang="nm"] .side .md h4 a, .res-nightmode .side .h4 a {color: #fff!important}
 
-html[lang="nm"] .side .md h4, .res-nightmode .side .md h4 {background: #444}
+html[lang="nm"] .side .md h4, .res-nightmode .side .md h4 {background: #6941E1}
 
 html[lang="nm"] body:not(.comments-page) div.content .entry,html[lang="nm"] .md hr,
 .res-nightmode body:not(.comments-page) div.content .entry,.res-nightmode .md hr {border-bottom: 1px solid #666}
@@ -3634,15 +3630,14 @@ html[lang="nm"] .comments-page .RES-keyNav-activeElement,
 html[lang="nm"] .comments-page .RES-keyNav-activeElement .md-container,
 .res-nightmode .comments-page .RES-keyNav-activeElement,
 .res-nightmode .comments-page .RES-keyNav-activeElement .md-container {
-    background-color: #333333 !important;
 		border-color: #371795!important;
 }
 
-html[lang="nm"] .RES-keyNav-activeElement,
-html[lang="nm"] .RES-keyNav-activeElement .md-container,
-.res-nightmode .RES-keyNav-activeElement,
-.res-nightmode .RES-keyNav-activeElement .md-container {
-    background-color: #333333!important;
+html[lang="nm"] div.RES-keyNav-activeElement,
+html[lang="nm"] div.RES-keyNav-activeElement .md-container,
+.res-nightmode div.RES-keyNav-activeElement,
+.res-nightmode div.RES-keyNav-activeElement .md-container {
+    background-color: transparent!important;
 }
 
 /*TOGGLE*/
@@ -3745,8 +3740,8 @@ color.
 
 /*FIX REDDIT GOLD HIGHLIGHT*/
 
-html[lang="nm"] .new-comment .usertext-body {
-background-color: #333333;
+html[lang="nm"] .new-comment .usertext-body,.res-nightmode .new-comment .usertext-body {
+background-color: #2c2c2c;
 border: 1px solid #0c0c0c;
 margin: -1px 0;
 }
@@ -3842,7 +3837,7 @@ display: none
 
 html[lang="nm"] .side .md h2,
 .res-nightmode .side .md h2 {
-    background: #444;
+    background: #6941E1;
 }
 
 html[lang="nm"] .side .md h2+ol,
@@ -4140,6 +4135,11 @@ a[href*="#btn"]:hover {
 	background-color: #0079d3!important;
 }
 
+html[lang="nm"] a[href*="#btn"]:hover,.res-nightmode a[href*="#btn"]:hover {
+	background-color: #333!important;
+}
+
+
 /* STICKIED LINK COLORS & GETTING RID OF RES-ACTIVE ELEMENT HIGHLIGHT*/
 
 .listing-page .stickied.link {
@@ -4152,7 +4152,7 @@ a[href*="#btn"]:hover {
 }
 
 html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
-    background-color: #c7b8f4!important;
+    background-color: #302d38!important;
 }
 
 .listing-page div.RES-keyNav-activeElement {
@@ -4252,6 +4252,12 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
     order: -1;
 }
 
+/* HOVER FOR FLAT-LIST*/
+
+.link .entry .buttons li + li { display: none }
+
+.link:hover .entry .buttons li + li { display: inline!important;}
+
 /*Misc RES Night Mode Fixes*/
 
 .res-nightmode .RES-keyNav-activeElement > .tagline, .res-nightmode .RES-keyNav-activeElement .md-container > .md, .res-nightmode .RES-keyNav-activeElement .md-container > .md p {
@@ -4262,9 +4268,9 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
     color: rgb(130, 130, 130);
 }
 
-.res-nightmode .RES-keyNav-activeElement, .res-nightmode .RES-keyNav-activeElement .md-container {
+/*.res-nightmode .RES-keyNav-activeElement, .res-nightmode .RES-keyNav-activeElement .md-container {
     background-color: #373737 !important;
-}
+}*/
 
 .res-nightmode .commentarea, .res-nightmode .comments-page .link, .res-nightmode .listing-page div.content, .res-nightmode .submit-page div.content, .res-nightmode .subreddit-rules-page, .res-nightmode .wiki-page div.content {
     background-color: #333;
@@ -4301,7 +4307,8 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
     border: none;
 }
 
-.res-nightmode #siteTable .thing .md h4,html[lang="nm"] #siteTable .thing .md h5,html[lang="nm"] #siteTable .thing .md h6,html[lang="nm"] .wiki-page-content .md h4,html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md h6 {
+.res-nightmode #siteTable .thing .md h4,html[lang="nm"] #siteTable .thing .md h5,html[lang="nm"] #siteTable .thing .md h6,html[lang="nm"] .wiki-page-content .md h4,
+html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md h6 {
 	color: #c0c0c0;
 }
 
@@ -4331,13 +4338,10 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 	transition: .2s ease;
 }
 
-<<<<<<< HEAD
 .res-nightmode .morelink a {
 	color: #fff!important;
 }
 
-=======
->>>>>>> origin/master
 .res-nightmode .side .submit .morelink:hover {
 	background-color: #492d9d!important;
 }
@@ -4346,18 +4350,9 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
   color:white!important;
 }
 
-<<<<<<< HEAD
 .res-nightmode .wiki-page .wiki-page-content .md.wiki > .toc ul {
 	background-color: transparent!important;
 }
-
-/*.res-nightmode body .content, .res-nightmode .side, .res-nightmode .icon-menu a,
-.res-nightmode .side .leavemoderator, .res-nightmode .side .leavecontributor-button, .res-nightmode .side .titlebox,
-.res-nightmode .side .spacer .titlebox .redditname, .res-nightmode .side .titlebox .flairtoggle, .res-nightmode .side .usertext-body .md ol,
-.res-nightmode .side .usertext-body .md ol ol, .res-nightmode .side .usertext-body .md ol ol li, .res-nightmode .modactionlisting table *,
-.res-nightmode .side .recommend-box .rec-item {
-    background-color: #333!important;
-}*/
 
 .res-nightmode body {background-color: #262626!important}
 
@@ -4368,8 +4363,6 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 .res-nightmode .linkflairlabel {
 	color: #fff!important;
 }
-=======
->>>>>>> origin/master
 /*
 
 Credits
