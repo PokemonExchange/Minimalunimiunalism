@@ -23,7 +23,6 @@ span.pagename.redditname a {
  }
 
  /*HEADER STYLE B EXCLUSIVE CODE*/
-
 #header::after {
     position: absolute;
     top: 189px;
@@ -1476,11 +1475,9 @@ body {background: #e6e6e8;}
  }
 
 /*
-
 Subreddit list dropdown
 Code derived from /r/Apicem
 Thanks to /u/Karma_4_Free
-
 */
 
 
@@ -1735,6 +1732,9 @@ h2 {
 	height: 225px;
 	transition: 300ms;
 	-webkit-transition: 300ms;
+	background : url(%%banner%%);
+	background-size: auto 225px;
+	background-repeat: no-repeat;
  }
 
 #header span.pagename.redditname a{
@@ -2203,7 +2203,7 @@ div.leavemoderator {
     border-top: 0;
     padding: 10px 10px 10px 26px;
     margin: 0 0px 20px 0px;
-		list-style-image: url(%%blank%%);
+		list-style-type: none;
 }
 
 .res-nightmode .side .usertext-body .md ol,.res-nightmode .side .md ul {background-color: #3a3a3a!important;}
@@ -2962,6 +2962,7 @@ form#image-upload.image-upload {
 .commentarea .thing .md ol li {
   border-bottom: solid 1px #eaeaea;
   padding: 5px;
+  background-color: #f2f2f2
 }
 #siteTable .thing .md ul li:nth-child(even),
 .wiki-page-content .md ul li:nth-child(even),
@@ -2970,14 +2971,6 @@ form#image-upload.image-upload {
 .wiki-page-content .md ol li:nth-child(even),
 .commentarea .thing .md ol li:nth-child(even) {
 	background-color: #f8f8f8;
-}
-#siteTable .thing .md ul li:nth-child(odd),
-.wiki-page-content .md ul li:nth-child(odd),
-.commentarea .md ul:nth-child(odd),
-#siteTable .thing .md ol li:nth-child(odd),
-.wiki-page-content .md ol li:nth-child(odd),
-.commentarea .thing .md ol li:nth-child(odd) {
-  background-color: #f2f2f2!important;
 }
 #siteTable .thing .md ul,
 .wiki-page-content .md ul,
@@ -3351,7 +3344,10 @@ html[lang="nm"] .thing .title,.res-nightmode .thing .title {color:#ac96ee!import
 
 html[lang="nm"] input[name="uh"] ~ a:after,.res-nightmode input[name="uh"] ~ a:after {display: none}
 
-html[lang="nm"] .entry .buttons .may-blank,.res-nightmode .entry .buttons .may-blank {color: #fff}
+html[lang="nm"] .entry .buttons .may-blank,.res-nightmode .entry .buttons .may-blank,
+html[lang="nm"] .icon-menu a,.res-nightmode .icon-menu a,
+html[lang="nm"] #sr-header-area a,html[lang="nm"] h2,html[lang="nm"] .sidecontentbox .collapse-button,
+.res-nightmode #sr-header-area a,.res-nightmode h2,.res-nightmode .sidecontentbox .collapse-button {color: #fff}
 
 html[lang="nm"] a.comments::after,.res-nightmode a.comments::after {color: #ccc!important}
 
@@ -3364,16 +3360,12 @@ html[lang="nm"] div.leavemoderator,html[lang="nm"] .toggle .option.active,html[l
 
 html[lang="nm"] .side .usertext-body,.res-nightmode .side .usertext-body {background-image: none;padding:0}
 
-html[lang="nm"] .icon-menu a,.res-nightmode .icon-menu a {color: #fff}
-
 html[lang="nm"] .sidecontentbox .title h1,.res-nightmode .sidecontentbox .title h1 {color: #fff;font-weight:700}
 
-html[lang="nm"] .side .titlebox .md h3 a,.res-nightmode .side .titlebox .md h3 a {background: #6941E1}
+html[lang="nm"] .side .titlebox .md h3 a,.res-nightmode .side .titlebox .md h3 a,
+html[lang="nm"] .side .titlebox .md h3 a:active,.res-nightmode .side .titlebox .md h3 a:active {background: #6941E1}
 
 html[lang="nm"] .side .titlebox .md h3 a:hover,.res-nightmode .side .titlebox .md h3 a:hover {background: #492d9d}
-
-html[lang="nm"] .side .titlebox .md h3 a:active,
-.res-nightmode .side .titlebox .md h3 a:active {background: #6941E1}
 
 html[lang="nm"] .side .titlebox .md h4 a,
 .res-nightmode .side .titlebox .md h4 a
@@ -3382,22 +3374,17 @@ html[lang="nm"] .side .titlebox .md h4 a,
 html[lang="nm"] .titlebox span.subscribers,html[lang="nm"] .titlebox .users-online,
 .res-nightmode .titlebox span.subscribers,.res-nightmode .titlebox .users-online {color: #fff!important}
 
-html[lang="nm"] #sr-header-area a,html[lang="nm"] h2,html[lang="nm"] .sidecontentbox .collapse-button,
-.res-nightmode #sr-header-area a,.res-nightmode h2,.res-nightmode .sidecontentbox .collapse-button {color: #fff}
-
 html[lang="nm"] .sidecontentbox .collapse-button,.res-nightmode .sidecontentbox .collapse-button {border: 1px solid #fff;}
 
 html[lang="nm"] body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,html[lang="nm"] .commentarea span.score,
-.res-nightmode body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,.res-nightmode .commentarea span.score {color: #fff!important}
-
-html[lang="nm"] .side .md h4 a, .res-nightmode .side .h4 a {color: #fff!important}
+.res-nightmode body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,.res-nightmode .commentarea span.score,
+html[lang="nm"] .side .md h4 a, .res-nightmode .side .h4 a,
+html[lang="nm"] .content .md a,.res-nightmode .content .md a {color: #fff!important}
 
 html[lang="nm"] .side .md h4, .res-nightmode .side .md h4 {background: #6941E1}
 
 html[lang="nm"] body:not(.comments-page) div.content .entry,html[lang="nm"] .md hr,
 .res-nightmode body:not(.comments-page) div.content .entry,.res-nightmode .md hr {border-bottom: 1px solid #666}
-
-html[lang="nm"] .content .md a,.res-nightmode .content .md a {color:#fff!important}
 
 html[lang="nm"] .titlebox a, .res-nightmode .titlebox a {color: ##6941E1}
 
@@ -3406,41 +3393,9 @@ html[lang="nm"] .link.promotedlink.promoted,.res-nightmode .link.promotedlink.pr
 html[lang="nm"] span.score,html[lang="nm"] .sidecontentbox .more a,
 .res-nightmode span.score,.res-nightmode .sidecontentbox .more a {color: #ccc!important}
 
-html[lang="nm"] #progressIndicator,html[lang="nm"] .commentarea .panestack-title .title,html[lang="nm"] .commentingAs,html[lang="nm"] .md,
-html[lang="nm"] .linkinfo .date,html[lang="nm"] div.score,html[lang="nm"] span.totalvotes,html[lang="nm"] .linkinfo .shortlink,
-.res-nightmode #progressIndicator,.res-nightmode .commentarea .panestack-title .title,.res-nightmode .commentingAs,.res-nightmode .md,
-.res-nightmode .linkinfo .date,.res-nightmode div.score,.res-nightmode span.totalvotes,.res-nightmode .linkinfo .shortlink {color: #fff!important}
-
 html[lang="nm"] body.comments-page .link,.res-nightmode body.comments-page .link {background: #323232}
 
 html[lang="nm"] .commentarea > .usertext,.res-nightmode .commentarea > .usertext {background-color: #292929}
-
-html[lang="nm"] .commentarea .thing,
-html[lang="nm"] .commentarea .child .thing.comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res-nightmode .commentarea .thing,
-.res-nightmode .commentarea .child .thing.comment,
-.res-nightmode .commentarea .child .thing.comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-    border:1px solid #333 !important
-}
 
 html[lang="nm"] .commentarea .child .thing.comment,
 html[lang="nm"] .commentarea .child .thing.comment .comment .comment,
@@ -3455,6 +3410,7 @@ html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .c
 .res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
     background: #222 !important;
+    border:1px solid #333 !important;
 }
 
 html[lang="nm"] .commentarea .thing,
@@ -3469,7 +3425,8 @@ html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .c
 .res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
 .res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-       background: #292929 !important;
+  background: #292929 !important;
+  border:1px solid #333 !important;
 }
 
 
@@ -3502,7 +3459,11 @@ html[lang="nm"] .deepthread::after,
 .res-nightmode .link .domain a:hover, .res-nightmode #preview-table > table > tbody > tr > th,.res-nightmode form#image-upload.image-upload,.res-nightmode .pretty-form,
 .res-nightmode .commentNavSortType:hover,.res-nightmode .commentarea .menuarea .toggle a:hover,.res-nightmode .comment .flat-list li a[onclick*="reply"],
 .res-nightmode .loadFlat:hover,.res-nightmode .submit-page .title,.res-nightmode .error,.res-nightmode #progressIndicator a#NERStaticLink, .res-nightmode .deepthread a,
-.res-nightmode .deepthread::after {color: #fff!important}
+.res-nightmode .deepthread::after,
+html[lang="nm"] #progressIndicator,html[lang="nm"] .commentarea .panestack-title .title,html[lang="nm"] .commentingAs,html[lang="nm"] .md,
+html[lang="nm"] .linkinfo .date,html[lang="nm"] div.score,html[lang="nm"] span.totalvotes,html[lang="nm"] .linkinfo .shortlink,
+.res-nightmode #progressIndicator,.res-nightmode .commentarea .panestack-title .title,.res-nightmode .commentingAs,.res-nightmode .md,
+.res-nightmode .linkinfo .date,.res-nightmode div.score,.res-nightmode span.totalvotes,.res-nightmode .linkinfo .shortlink {color: #fff!important}
 
 html[lang="nm"] .search-page .searchfacets,.res-nightmode .search-page .searchfacets {background: #555}
 
@@ -3641,25 +3602,17 @@ html[lang="nm"] div.RES-keyNav-activeElement .md-container,
 }
 
 /*TOGGLE*/
-.side .md h3 a[href*="http://www.reddit.com/r/nintendoexchange"] {
+.side .md h3 a[href*="http://www.reddit.com/r/pokemonexchange"] {
     visibility:hidden;
     position:absolute;
 }
-html[lang="nm"] .side .md h3 a[href*="http://www.reddit.com/r/nintendoexchange"] {
+html[lang="nm"] .side .md h3 a[href*="http://www.reddit.com/r/pokemonexchange"] {
     visibility:visible;
     position:relative;
 }
-html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/nintendoexchange"] {
+html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/pokemonexchange"] {
     visibility:hidden;
     position:absolute;
-}
-
-/*HEADER*/
-
-#header {
-   background : url(%%banner%%);
-   background-size: auto 225px;
-	 background-repeat: no-repeat;
 }
 
 /*NM HEADER*/
@@ -3679,12 +3632,9 @@ html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/nintendoexchange"] 
 }
 
 /*——————————————————————————————————————————————
-
              SUBREDDIT COLOR SCHEME
-
 For aesthetic purposes, please keep everything
 of the same set in one color.
-
 The text color for the buttons and backgrounds
 is white. Please make sure the chosen background
 color will provide enough contrast with the text
@@ -3793,7 +3743,7 @@ display: none
 	    border-top: 0;
 	    padding: 10px 10px 10px 26px;
 	    margin: 0 0px 20px 0px;
-			list-style-image: url(%%blank%%);
+			list-style-type: none;
 	}
 
 	.titlebox .md h4 + ul {
@@ -4159,32 +4109,6 @@ html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickie
 	background-color: transparent!important;
 }
 
-/*I've been trying to get rid of the RES active element highlight for several hours but to no avail. Below are my attempts, commented out
-because they do not work.*/
-
-/*html[lang="nm"] div.comments-page div.RES-keyNav-activeElement,
-.res-nightmode div.comments-page div.RES-keyNav-activeElement {
-	background-color: #292929!important;
-}
-
-div.commentarea div.RES-keyNav-activeElement .md {
-	background-color: #fff!important;
-}
-
-html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickied.link {
-    background-color: #0b051e!important;
-}
-
-.listing-page .stickied.link .RES-keyNav-activeElement, .listing-page .stickied.link .RES-keyNav-activeElement .md-container {
-    background-color: #c7b8f4 !important;
-}
-
-html[lang=nm] .listing-page .stickied.link .RES-keyNav-activeElement, html[lang=nm] .listing-page .stickied.link .RES-keyNav-activeElement .md-container,
-.res-nightmode .listing-page .stickied.link .RES-keyNav-activeElement,.res-nightmode .listing-page .stickied.link .RES-keyNav-activeElement .md-container {
-	background-color: #0b051e!important;
-}*/
-
-
 /* NSFW Button Customization*/
 
 .over18.link {
@@ -4267,10 +4191,6 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 .res-nightmode .tagline, .res-nightmode .entry .buttons li a, .res-nightmode .trending-subreddits strong {
     color: rgb(130, 130, 130);
 }
-
-/*.res-nightmode .RES-keyNav-activeElement, .res-nightmode .RES-keyNav-activeElement .md-container {
-    background-color: #373737 !important;
-}*/
 
 .res-nightmode .commentarea, .res-nightmode .comments-page .link, .res-nightmode .listing-page div.content, .res-nightmode .submit-page div.content, .res-nightmode .subreddit-rules-page, .res-nightmode .wiki-page div.content {
     background-color: #333;
@@ -4364,18 +4284,14 @@ html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md
 	color: #fff!important;
 }
 /*
-
 Credits
-
 /r/EnTypo for Enhanced Typograhy
 /r/Apple for Messages alert
 /r/Naut for Moderator Distinguish Message
 /u/Karma_4_free for Subreddit List style from /r/Apicem
 /r/Overwatch for comment collapse button
 /r/Slight for input box underline
-
 MANDATORY LEGAL NOTICES/CREDITS - DO NOT REMOVE
-
 Gear by Alexander Simone from the Noun Project
 Compass by Vicons Design from the Noun Project
 Arrow Up by Raashid.A from the Noun Project
