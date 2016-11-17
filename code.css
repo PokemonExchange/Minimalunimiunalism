@@ -3915,8 +3915,8 @@ background-position: -48px -2px;
 .flair-pokeball::before, a[href$="#bs-pokeball"] {
 background-image: url(%%ballsprites%%);
 background-position: -72px -2px;
-width: 24px;
-height: 24px;
+width: 20px;
+height: 16px;
 }
 
 .flair-cherishball::before, a[href$="#bs-cherishball"] {
