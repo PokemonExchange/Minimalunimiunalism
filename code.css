@@ -419,7 +419,6 @@ body .content .over18 .entry .buttons li.reported-stamp {
 
 .flairrow {
     font-weight: bold;
-    text-transform: uppercase;
     font-size: 13px;
 }
 
@@ -3863,6 +3862,14 @@ height: 30px;
 margin: 0px 5px;
 }
 
+.flair::after, a[href^="#ref-"]{
+content: "";
+background-image: url(%%mflairs%%);
+
+display: inline-block;
+vertical-align: middle;
+}
+
 .flair-banned::after {
 	background: 0 0;
 	margin: 0 0 0 5px;
@@ -3889,8 +3896,8 @@ background-image: url(%%monsspritebw%%);
 
 .flair-balls::before, a[href^="#bs-"] {
 background-image: url(%%ballsprites%%);
-width: 24px;
-height: 24px;
+width: 20px;
+height: 16px;
 }
 
 .flair-masterball::before, a[href$="#bs-masterball"] {
@@ -3958,20 +3965,19 @@ height: 24px;
 /*POKEMON FLAIRS*/
 
 .flair-lunala::before {
-	background-position: -753px -872px;
+	background-position: -805px -931px;
 }
 
 .flair-shedinja::before {
-	background-position: -644px -313px;
-	height: 26px;
+	background-position: -685px -332px;
 }
 
 .flair-silvally::before {
-	background-position: -754px -843px;
+	background-position: -806px -900px;
 }
 
 .flair-charmander::before {
-	background-position: -192px -3px;
+	background-position: -202px -4px;
 }
 
 .flair-genesect::before {
@@ -3979,29 +3985,29 @@ background-position: -180px -721px;
 }
 
 .flair-gengar::before {
-background-position: -1094px -86px;
+background-position: -1161px -90px;
 }
 
 .flair-klinklang::before {
-background-position: -1091px -622px;
+background-position: -1164px -663px;
 }
 
-.flair-ashgreninja::before {
-background-position: -78px -709px;
+.flair-litten::before {
+background-position: -1242px -845px;
 }
 
 .flair-charizard::before {
-	background-position: -339px 0px;
+	background-position: -364px 0px;
 	width: 32px;
 }
 
 .flair-pikachupopstar::before {
-	background-position: -118px -30px;
+	background-position: -121px -30px;
 	height: 27px;
 }
 
 .flair-hooh::before {
-	background-position: -118px -281px;
+	background-position: -125px -300px;
 }
 
 /*WIKI BUTTONS*/
