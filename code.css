@@ -11,15 +11,15 @@
 span.pagename.redditname a {
 	color: transparent;
 	display: block;
-	width: 250px;
-	height: 120px;
+	width: 245px;
+	height: 32px;
 	background-image: url(%%sublogo%%);
 	background-size: contain;
 	background-position: left;
 	background-repeat: no-repeat;
 	position: absolute;
-	top: 110px;
-  left: 20px;
+	top: 154px;
+  left: 28px;
  }
 
  /*HEADER STYLE B EXCLUSIVE CODE*/
@@ -1372,8 +1372,6 @@ body div .thing .tagline .author.moderator {background: #4a20c7 !important; colo
 
 body div .thing .tagline .author.moderator:hover {background: #6941E1 !important; text-decoration: none;}
 
-.tagline .moderator:after {content: "oderator - speaking officially.";}
-
 a.author.moderator:after {content: "";}
 
 /*REDDIT ADMIN DISTINGUISH*/
@@ -2389,7 +2387,7 @@ body.res .RESshortcutside:active,
 /*COLORFUL LINK FLAIRS*/
 .linkflairlabel, .side a[href*='#tag-'], .wiki-page-content a[href*='#tag-'], .submit-page a[href*='#tag-'] {
 	max-width: none;
-	min-width: 102px;
+	min-width: 105px;
 	border: 0px none;
 	text-align: center;
 	font: 700 12px sans-serif;
@@ -2397,7 +2395,7 @@ body.res .RESshortcutside:active,
 
  .side a[href*='#tag-bp'], .side a[href*='#tag-sp'], .side a[href*='#tag-bv'], .side a[href*='#tag-sv'], .side a[href*='#tag-h'],
  .side a[href*='#tag-t'], .side a[href*='#tag-p'], .side a[href*='#tag-m'], .side a[href*='#tag-g'] {
- 	min-width: 102px!important;
+ 	min-width: 105px!important;
  	border: 0px none;
  	margin-left: 46px;
  	text-align: center;
@@ -2407,7 +2405,7 @@ body.res .RESshortcutside:active,
 
  .submit-page a[href*='#tag-bp'], .submit-page a[href*='#tag-sp'], .submit-page a[href*='#tag-bv'], .submit-page a[href*='#tag-sv'], .submit-page a[href*='#tag-h'],
  .submit-page a[href*='#tag-t'], .submit-page a[href*='#tag-p'], .submit-page a[href*='#tag-m'], .submit-page a[href*='#tag-g'] {
- 	min-width: 84px!important;
+ 	min-width: 92px!important;
  	display: inline-table;
  }
 
@@ -2877,7 +2875,7 @@ form#image-upload.image-upload {
   font-size: 36px;
 }
 #siteTable .thing .md h3 {
-  color:#8463e6;
+  color:#2f2f2f;
 }
 #siteTable .thing .md h3:before,
 .wiki-page-content .md h3:before {
@@ -3355,8 +3353,10 @@ html[lang="nm"] .flair,.res-nightmode .flair {border: none}
 
 html[lang="nm"] .side,.res-nightmode .side {border: #4c4c4c;background:#333}
 
-html[lang="nm"] div.leavemoderator,html[lang="nm"] .toggle .option.active,html[lang="nm"] .titlebox form.toggle,
-.res-nightmode div.leavemoderator,.res-nightmode .toggle .option.active,.res-nightmode .titlebox form.toggle {color: #ccc}
+html[lang="nm"] div.leavemoderator,html[lang="nm"] .titlebox form.toggle,
+.res-nightmode div.leavemoderator,.res-nightmode .titlebox form.toggle {color: #ccc}
+
+html[lang="nm"] .toggle .option.active,.res-nightmode .toggle .option.active {color: #fff}
 
 html[lang="nm"] .side .usertext-body,.res-nightmode .side .usertext-body {background-image: none;padding:0}
 
@@ -3430,7 +3430,7 @@ html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .c
 }
 
 
-html[lang="nm"] button,.res-nightmode button {background-color: #999;color:#000}
+html[lang="nm"] button,.res-nightmode button {background-color: #6941E1;color:#fff;border:none!important}
 
 html[lang="nm"] .tagline a,html[lang="nm"] #RESShortcutsSort,html[lang="nm"] #RESShortcutsRight,html[lang="nm"] #RESShortcutsLeft,html[lang="nm"] #RESShortcutsAdd,html[lang="nm"] #RESShortcutsTrash,
 .res-nightmode .tagline a,.res-nightmode #RESShortcutsSort,.res-nightmode #RESShortcutsRight,.res-nightmode #RESShortcutsLeft,.res-nightmode #RESShortcutsAdd,.res-nightmode #RESShortcutsTrash  {color: #fff}
@@ -3491,7 +3491,7 @@ html[lang="nm"] body:not(.search-page) #search input[type="text"],
  }
 
 html[lang="nm"] .submit-page .content a,
-.res-nightmode .submit-page .content a {color: #999 !important;}
+.res-nightmode .submit-page .content a {color: #fff!important;}
 
 html[lang="nm"] .md table,html[lang="nm"] .md ul,
 .res-nightmode .md table,.res-nightmode .md ul {color: #fff!important}
@@ -3664,13 +3664,13 @@ color.
 
         .RESDashboardToggle.remove:hover,.comments-page .RESSubscriptionButton:hover,.fancy-toggle-button .remove:hover,.panestack-title a.title-button.gold:hover,.panestack-title a.title-button:hover,.sidecontentbox a.helplink:hover,body.res .side .RESshortcutside.remove:hover,button:hover
 
-        {background:#492d9d}
+        {background:#8464e6}
 
         /*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
 
         .RESDashboardToggle.remove:active,.RESshortcutside.remove:active,.comments-page .RESSubscriptionButton:active,.fancy-toggle-button .remove:active,.panestack-title a.title-button.gold:active,.panestack-title a.title-button:active,.sidecontentbox a.helplink:active,button:active
 
-        {background:#967aea}
+        {background:#492d9d}
 
 /*SET TWO - SECONDARY COLOR*/
 
@@ -3680,11 +3680,11 @@ color.
 
         /*HOVER - LIGHTER SHADE OF DEFAULT COLOR*/
 
-        .morelink:hover,.side .titlebox .md h3 a:hover {background:#492d9d}
+        .morelink:hover,.side .titlebox .md h3 a:hover {background:#8464e6}
 
         /*ACTIVE - DARKER SHADE OF DEFAULT COLOR*/
 
-        .morelink:active, .side .titlebox .md h3 a:active {background:#967aea;}
+        .morelink:active, .side .titlebox .md h3 a:active {background:#492d9d;}
 
 /*END CHANGE COLOR SCHEME*/
 
@@ -3957,42 +3957,51 @@ height: 24px;
 
 /*POKEMON FLAIRS*/
 
-.flair-latios::before, a[href^="#pk-latios"] {
-background-position: -729px -872px;
-width: 36px;
+.flair-lunala::before {
+	background-position: -753px -872px;
 }
 
-.flair-shedinja::before, a[href^="#pk-shedinja"] {
-	background-position: -540px -302px;
+.flair-shedinja::before {
+	background-position: -644px -313px;
+	height: 26px;
 }
 
-.flair-megametagross::before, a[href^="#pk-megametagross"] {
-width: 32px;
-background-position: -744px -812px;
+.flair-silvally::before {
+	background-position: -754px -843px;
 }
 
-.flair-megablaziken::before, a[href^="#pk-megablaziken"] {
-background-position: -271px -269px;
+.flair-charmander::before {
+	background-position: -192px -3px;
 }
 
-.flair-charmander::before, a[href^="#pk-charmander"] {
-	background-position: -152px -3px;
-}
-
-.flair-genesect::before, a[href^="#pk-genesect"] {
+.flair-genesect::before {
 background-position: -180px -721px;
 }
 
-.flair-merrygengar::before, a[href^="#pk-merrygengar"] {
-background-position: -695px -872px;
+.flair-gengar::before {
+background-position: -1094px -86px;
 }
 
-.flair-klinklang::before, a[href^="#pk-klinklang"] {
-background-position: -302px -658px;
+.flair-klinklang::before {
+background-position: -1091px -622px;
 }
 
-.flair-froakie::before, a[href^="#pk-froakie"] {
-background-position: -393px -722px;
+.flair-ashgreninja::before {
+background-position: -78px -709px;
+}
+
+.flair-charizard::before {
+	background-position: -339px 0px;
+	width: 32px;
+}
+
+.flair-pikachupopstar::before {
+	background-position: -118px -30px;
+	height: 27px;
+}
+
+.flair-hooh::before {
+	background-position: -118px -281px;
 }
 
 /*WIKI BUTTONS*/
@@ -4108,6 +4117,7 @@ html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickie
 .listing-page div.RES-keyNav-activeElement {
 	background-color: transparent!important;
 }
+
 
 /* NSFW Button Customization*/
 
@@ -4262,7 +4272,7 @@ html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md
 	color: #fff!important;
 }
 
-.res-nightmode .side .submit .morelink:hover {
+.res-nightmode .side .submit .morelink:hover,html[lang="nm"] .side .submit .morelink:hover {
 	background-color: #492d9d!important;
 }
 
