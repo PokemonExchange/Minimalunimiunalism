@@ -419,7 +419,6 @@ body .content .over18 .entry .buttons li.reported-stamp {
 
 .flairrow {
     font-weight: bold;
-    text-transform: uppercase;
     font-size: 13px;
 }
 
@@ -1176,6 +1175,8 @@ html[lang="nm"] .usertext.border .usertext-body {
 	border-radius: 4px;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.08);
  }
+ 
+ div#reddit-field.roundfield {display: none;}
 
 
 
@@ -1416,22 +1417,8 @@ body:not(.comments-page) div.content .entry {
 	padding-top: 5px;
 }
 
-div.RES-keyNav-activeElement,
-div.RES-keyNav-activeElement .md-container {
-	background-color: transparent!important;
-	padding-left: 15px !important;
-	border-left: 3px solid #6941E1;
-}
-
 /*Body background*/
 body {background: #e6e6e8;}
-
-/*Expando no outline*/
-.entry.RES-keyNav-activeElement div.md, .commentarea .entry.RES-keyNav-activeElement div.noncollapsed, .entry.RES-keyNav-activeElement .usertext-body, .new-comment .usertext-body .md {
-	outline: medium none !important;
-	border: 0px none !important;
-	margin-left: -4px;
- }
 
 /*RES Never Ending Reddit*/
 .NERPageMarker, #progressIndicator {
@@ -2863,7 +2850,6 @@ form#image-upload.image-upload {
 }
 #siteTable .thing .md h1 {
   color: #6941E1;
-  text-align: center;
   font-weight: bold;
   font-size: 36px;
 	padding: 10px;
@@ -2876,6 +2862,11 @@ form#image-upload.image-upload {
 }
 #siteTable .thing .md h3 {
   color:#2f2f2f;
+}
+
+.res-nightmode #siteTable .thing .md h3,
+html[lang="nm"] #siteTable .thing .md h3 {
+  color:#8464e6;
 }
 #siteTable .thing .md h3:before,
 .wiki-page-content .md h3:before {
@@ -2918,26 +2909,17 @@ form#image-upload.image-upload {
   font-size: 14px;
 }
 #siteTable .thing .md p a,
-.commentarea .thing .md p a {
-  border-bottom: solid 1px #dddddd;
+.commentarea .thing .md p a,
+.wiki-page-content .md p a {
   color: #2f2f2f;
   font-weight: bold;
-  padding: 2px;
-	transition: .3s ease-in;
-}
-.wiki-page-content .md p a {
-	color: #2f2f2f;
-	font-weight: bold;
-	padding: 2px;
+  padding: 0;
+  transition: .1s ease-in;
 }
 
 #siteTable .thing .md p a:hover,
 .commentarea .thing .md p a:hover {
-	box-shadow: 2px 2px 4px silver;
-	background-color: #ececec;
-}
-#siteTable .thing .md p a:hover {
-  background-color: #dddddd;
+  color: #555555;
 }
 #siteTable .thing .md ul,
 .wiki-page-content .md ul,
@@ -2973,7 +2955,8 @@ form#image-upload.image-upload {
 #siteTable .thing .md ul,
 .wiki-page-content .md ul,
 .commentarea .md ul {
-  list-style-type: none;
+  list-style-image: url(%%liststyledash%%);
+  list-style-position: inside;
 }
 #siteTable .thing .md ol,
 .wiki-page-content .md ol,
@@ -2997,7 +2980,7 @@ form#image-upload.image-upload {
 #siteTable .thing .md hr,
 .wiki-page-content .md hr,
 .commentarea .md hr {
-  margin: 40px 80px;
+  margin: 20px;
   background-color: #cccccc;
   border: none;
   height: 1px;
@@ -3021,19 +3004,6 @@ form#image-upload.image-upload {
 .commentarea .thing .md table tbody tr,
 .wiki-page-content .md table tbody tr {
   border-bottom: solid 1px #eaeaea;
-}
-#siteTable .thing .md table tbody tr:nth-child(even),
-.commentarea .thing .md table tbody tr:nth-child(even),
-.wiki-page-content .md table tbody tr:nth-child(even) {
-  background-color: #fafafa;
-}
-.res-nightmode #siteTable .thing .md table tbody tr:nth-child(even),
-.res-nightmode .commentarea .thing .md table tbody tr:nth-child(even),
-.res-nightmode .wiki-page-content .md table tbody tr:nth-child(even),
-hmtl[lang="nm"] #siteTable .thing .md table tbody tr:nth-child(even),
-hmtl[lang="nm"] .commentarea .thing .md table tbody tr:nth-child(even),
-hmtl[lang="nm"] .wiki-page-content .md table tbody tr:nth-child(even) {
-  background-color: #2f2f2f;
 }
 #siteTable .thing .md table tbody tr td,
 .commentarea .thing .md table tbody tr td,
@@ -3092,6 +3062,15 @@ hmtl[lang="nm"] .wiki-page-content .md table tbody tr:nth-child(even) {
   padding: 0px !important;
 }
 
+html[lang="nm"] #siteTable .thing .md ul,
+html[lang="nm"] .wiki-page-content .md ul,
+html[lang="nm"] .commentarea .md ul,
+.res-nightmode #siteTable .thing .md ul,
+.res-nightmode .wiki-page-content .md ul,
+.res-nightmode .commentarea .md ul {
+	list-style-image: url(%%nmliststyledash%%)
+}	
+
 html[lang="nm"] #siteTable .thing .md h4,html[lang="nm"] #siteTable .thing .md h5,html[lang="nm"] #siteTable .thing .md h6,
 html[lang="nm"] .wiki-page-content .md h4,html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md h6,
 .res-nightmode #siteTable .thing .md h4,.res-nightmode #siteTable .thing .md h5,.res-nightmode #siteTable .thing .md h6,
@@ -3134,9 +3113,7 @@ html[lang="nm"] #siteTable .thing .md code,html[lang="nm"] .wiki-page-content .m
 
 html[lang="nm"] #siteTable .thing .md p a:hover,html[lang="nm"] .commentarea .thing .md p a:hover,
 .res-nightmode #siteTable .thing .md p a:hover,.res-nightmode .commentarea .thing .md p a:hover {
-	background: transparent;
 	color:#8463e6!important;
-	box-shadow: 2px 2px 4px #8463e6;
 }
 
 html[lang="nm"] .commentarea .thing .md table thead tr th,
@@ -3587,20 +3564,6 @@ html[lang="nm"] .side .md h2 + ul,.res-nightmode .side .md h2 + ul {background: 
 
 html[lang="nm"] .side .sidecontentbox a,.res-nightmode .side .sidecontentbox a {color: #ccc}
 
-html[lang="nm"] .comments-page .RES-keyNav-activeElement,
-html[lang="nm"] .comments-page .RES-keyNav-activeElement .md-container,
-.res-nightmode .comments-page .RES-keyNav-activeElement,
-.res-nightmode .comments-page .RES-keyNav-activeElement .md-container {
-		border-color: #371795!important;
-}
-
-html[lang="nm"] div.RES-keyNav-activeElement,
-html[lang="nm"] div.RES-keyNav-activeElement .md-container,
-.res-nightmode div.RES-keyNav-activeElement,
-.res-nightmode div.RES-keyNav-activeElement .md-container {
-    background-color: transparent!important;
-}
-
 /*TOGGLE*/
 .side .md h3 a[href*="http://www.reddit.com/r/pokemonexchange"] {
     visibility:hidden;
@@ -3863,6 +3826,14 @@ height: 30px;
 margin: 0px 5px;
 }
 
+.flair::after, a[href^="#ref-"]{
+content: "";
+background-image: url(%%mflairs%%);
+
+display: inline-block;
+vertical-align: middle;
+}
+
 .flair-banned::after {
 	background: 0 0;
 	margin: 0 0 0 5px;
@@ -3958,20 +3929,19 @@ height: 24px;
 /*POKEMON FLAIRS*/
 
 .flair-lunala::before {
-	background-position: -753px -872px;
+	background-position: -805px -931px;
 }
 
 .flair-shedinja::before {
-	background-position: -644px -313px;
-	height: 26px;
+	background-position: -685px -332px;
 }
 
 .flair-silvally::before {
-	background-position: -754px -843px;
+	background-position: -806px -900px;
 }
 
 .flair-charmander::before {
-	background-position: -192px -3px;
+	background-position: -202px -4px;
 }
 
 .flair-genesect::before {
@@ -3979,29 +3949,29 @@ background-position: -180px -721px;
 }
 
 .flair-gengar::before {
-background-position: -1094px -86px;
+background-position: -1161px -90px;
 }
 
 .flair-klinklang::before {
-background-position: -1091px -622px;
+background-position: -1164px -663px;
 }
 
-.flair-ashgreninja::before {
-background-position: -78px -709px;
+.flair-litten::before {
+background-position: -1242px -845px;
 }
 
 .flair-charizard::before {
-	background-position: -339px 0px;
+	background-position: -364px 0px;
 	width: 32px;
 }
 
 .flair-pikachupopstar::before {
-	background-position: -118px -30px;
+	background-position: -121px -30px;
 	height: 27px;
 }
 
 .flair-hooh::before {
-	background-position: -118px -281px;
+	background-position: -125px -300px;
 }
 
 /*WIKI BUTTONS*/
@@ -4114,8 +4084,10 @@ html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickie
     background-color: #302d38!important;
 }
 
-.listing-page div.RES-keyNav-activeElement {
-	background-color: transparent!important;
+/* Tagline Size */
+
+.tagline {
+	font-size:12px;
 }
 
 
@@ -4192,10 +4164,29 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 
 .link:hover .entry .buttons li + li { display: inline!important;}
 
+/* User Notes */
+
+.usernote-button #add-user-tag {
+	color: black;
+}
+
+.mod-toolbox.res-nightmode .tb-popup {
+    background-color: #fff!important;
+}
+
+.mod-toolbox.res-nightmode .tb-popupheader {
+    background-color: rgb(206, 227, 248);
+	color: #222222;
+}
+
 /*Misc RES Night Mode Fixes*/
 
-.res-nightmode .RES-keyNav-activeElement > .tagline, .res-nightmode .RES-keyNav-activeElement .md-container > .md, .res-nightmode .RES-keyNav-activeElement .md-container > .md p {
-    color: #DDDDDD !important;
+.res-nightmode .res .RES-keyNav-activeElement .md-container > .md, .res-nightmode .res .RES-keyNav-activeElement .md-container > .md p {
+    color: #fff !important;
+}
+
+.res-nightmode .res .RES-keyNav-activeElement > .tagline {
+	color: #828282 !important;
 }
 
 .res-nightmode .tagline, .res-nightmode .entry .buttons li a, .res-nightmode .trending-subreddits strong {
@@ -4292,6 +4283,12 @@ html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md
 
 .res-nightmode .linkflairlabel {
 	color: #fff!important;
+}
+
+/* Fix RES Active Element */
+
+.res .RES-keyNav-activeElement, .res .RES-keyNav-activeElement .md-container, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed, .res-nightmode .res .RES-keyNav-activeElement, .res-nightmode .res .RES-keyNav-activeElement .md-container, .res-nightmode .res .commentarea .RES-keyNav-activeElement .md, .res-nightmode .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+    background: 0 0!important;
 }
 /*
 Credits
