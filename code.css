@@ -19,7 +19,7 @@ span.pagename.redditname a {
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 154px;
-  left: 28px;
+	left: 28px;
  }
 
  /*HEADER STYLE B EXCLUSIVE CODE*/
@@ -99,10 +99,10 @@ a {
 
 /*--- Tabs - Hide unimportant ones  ---*/
 /*--- Hide Rising (Tab 3) --- */
-	#header .tabmenu li:nth-of-type(3) {
+#header .tabmenu li:nth-of-type(3) {
 	display: none;
 	visibility: hidden;
-	}
+}
 
 /*--- Hide Controversial (Tab 4) --- */
  #header .tabmenu li:nth-of-type(4) {
@@ -117,22 +117,22 @@ a {
  }
 
  /*--- Hide View Images (Tab 10) --- */
- 	#header .tabmenu li:nth-of-type(10) {
- 	display: none;
- 	visibility: hidden;
- 	}
+#header .tabmenu li:nth-of-type(10) {
+	display: none;
+	visibility: hidden;
+}
 
  /*--- Hide Queue (Tab 11) --- */
- 	#header .tabmenu li:nth-of-type(11) {
- 	display: none;
- 	visibility: hidden;
- 	}
+#header .tabmenu li:nth-of-type(11) {
+	display: none;
+	visibility: hidden;
+}
 
  /*--- Hide Metrics (Tab 12) --- */
- 	#header .tabmenu li:nth-of-type(12) {
- 	display: none;
- 	visibility: hidden;
- 	}
+#header .tabmenu li:nth-of-type(12) {
+	display: none;
+	visibility: hidden;
+}
 
 
 /*--- End Tabs - Hide unimportant ones  ---*/
@@ -1460,23 +1460,23 @@ body {background: #e6e6e8;}
  }
 
 /*
-Subreddit list dropdown
-Code derived from /r/Apicem
-Thanks to /u/Karma_4_Free
+	Subreddit list dropdown
+	Code derived from /r/Apicem
+	Thanks to /u/Karma_4_Free
 */
 
 
         #sr-header-area .drop-choices.srdrop,
         .res #srList,
         .res #RESSubredditGroupDropdown {
-          top: 30px!important;
-          margin-left: 10px;
-          border: 0;
-          padding: 10px;
-          text-transform: uppercase;
-          letter-spacing: .5px;
-          font-size: 9px
-          border-radius: 6px;
+			top: 30px!important;
+			margin-left: 10px;
+			border: 0;
+			padding: 10px;
+			text-transform: uppercase;
+			letter-spacing: .5px;
+			font-size: 9px;
+			border-radius: 6px;
         }
 
         .res #srList {background: rgba(0, 0, 0, 0.75);}
@@ -1636,10 +1636,10 @@ h2 {
  /*INFOBAR*/
 
  .reddit-infobar {
-	 background-color: #8463e6;
-	 border-color: #333;
-	 border-radius: 2px;
-   margin-bottom: 20px;
+	background-color: #8463e6;
+	border-color: #333;
+	border-radius: 2px;
+	margin-bottom: 20px;
  }
 
  /*Linkinfo*/
@@ -1689,7 +1689,7 @@ h2 {
     border-radius: 0px 0px 4px 4px;
     padding: 10px;
     text-align: center;
-		text-transform: lowercase;
+	text-transform: lowercase;
 }
 
 .linkinfo .shortlink {
@@ -1793,9 +1793,9 @@ h2 {
  }
 
  .titlebox h1.redditname {
-font-weight: 400;
-text-align: center;
-display: inline-table!important;
+	font-weight: 400;
+	text-align: center;
+	display: inline-table!important;
 }
 
 .titlebox .redditname {height: 25px}
@@ -2595,10 +2595,14 @@ body .stickied .thumbnail.self,
 body:not(.comments-page) .stickied .link .tagline,
 body:not(.comments-page) .stickied .tagline,
 body:not(.comments-page) .stickied .entry .buttons li a,
-body:not(.comments-page) .stickied .entry .buttons li + li {color: #2B8B27 !important;}
+body:not(.comments-page) .stickied .entry .buttons li + li {
+	color: #2B8B27 !important;
+}
 
 /*UPPER RIGHT RES THINGY*/
-.res #RESShortcutsEditContainer, .res #sr-more-link {background: transparent;}
+.res #RESShortcutsEditContainer, .res #sr-more-link {
+	background: transparent;
+}
 
 #sr-more-link {
 	position: absolute;
@@ -2800,13 +2804,13 @@ form#image-upload.image-upload {
 
 
 /*
-  EnTypo v0.2 (http://www.reddit.com/r/EnTypo)
-  Modified for Pokemon Exchange
-  Copyright (c) 2015 Timur Kuzhagaliyev (TimboKZ)
+	EnTypo v0.2 (http://www.reddit.com/r/EnTypo)
+	Modified for Pokemon Exchange
+	Copyright (c) 2015 Timur Kuzhagaliyev (TimboKZ)
 */
 #siteTable .thing .md,
 .wiki-page-content .md {
-  padding: 0px 10px 10px 10px;
+	padding: 0px 10px 10px 10px;
 }
 #siteTable .thing .md h1,
 .wiki-page-content .md h1,
@@ -2828,8 +2832,8 @@ form#image-upload.image-upload {
 .wiki-page-content .md pre,
 #siteTable .thing .md table,
 .wiki-page-content .md table {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 20px 10px 10px 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 20px 10px 10px 10px;
 }
 .commentarea .md blockquote,
 .commentarea .md ul,
@@ -2838,30 +2842,38 @@ form#image-upload.image-upload {
     font-family: Arial, Helvetica, sans-serif;
     margin: 20px 10px 10px 10px;
 }
-#siteTable .thing .md blockquote,
 .wiki-page-content .md blockquote,
-.commentarea .md blockquote {
-    padding: 10px 10px;
-    border-left: solid 2px #666;
+.commentarea .thing .md blockquote {
+    padding: 10px;
+    border-left: solid 2px #aaa;
+    background-color: #f2f2f2;
+    color: #2f2f2f;
+    line-height: 20px;
+    font-size: 14px;
+}
+#siteTable .thing .md blockquote {
+	padding: 1px 10px 10px;
+    border-left: solid 2px #aaa;
     background-color: #f2f2f2;
     color: #2f2f2f;
     line-height: 20px;
     font-size: 14px;
 }
 #siteTable .thing .md h1 {
-  color: #6941E1;
-  font-weight: bold;
-  font-size: 36px;
+	color: #6941E1;
+	text-align: center;
+	font-weight: bold;
+	font-size: 36px;
 	padding: 10px;
 }
 #siteTable .thing .md h2,
 .wiki-page-content .md h2 {
-  color: #2f2f2f;
-  font-weight: bold;
-  font-size: 36px;
+	color: #2f2f2f;
+	font-weight: bold;
+	font-size: 36px;
 }
 #siteTable .thing .md h3 {
-  color:#2f2f2f;
+	color:#2f2f2f;
 }
 
 .res-nightmode #siteTable .thing .md h3,
@@ -2875,51 +2887,38 @@ html[lang="nm"] #siteTable .thing .md h3 {
 }
 #siteTable .thing .md h4,
 .wiki-page-content .md h4 {
-  margin: -5px 10px 10px 10px;
-  color: #666666;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  text-align: center;
-  font-style: italic;
-  font-size: 14px;
+	margin: -5px 10px 10px 10px;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
 	padding: 4px;
 }
 #siteTable .thing .md h5,
 .wiki-page-content .md h5 {
-  margin: -5px 10px 10px 10px;
-  color: #666666;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  font-style: italic;
-  font-size: 14px;
+	margin: -5px 10px 10px 10px;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 14px;
 }
 #siteTable .thing .md h6,
 .wiki-page-content .md h6 {
-  margin: 20px 80px;
-  color: #666666;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  text-align: center;
-  font-style: italic;
-  font-size: 14px;
+	margin: 20px 80px;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
 }
 #siteTable .thing .md p,
 .wiki-page-content .md p {
-  line-height: 20px;
-  font-size: 14px;
-}
-#siteTable .thing .md p a,
-.commentarea .thing .md p a,
-.wiki-page-content .md p a {
-  color: #2f2f2f;
-  font-weight: bold;
-  padding: 0;
-  transition: .1s ease-in;
-}
-
-#siteTable .thing .md p a:hover,
-.commentarea .thing .md p a:hover {
-  color: #555555;
+	line-height: 20px;
+	font-size: 14px;
 }
 #siteTable .thing .md ul,
 .wiki-page-content .md ul,
@@ -2927,12 +2926,12 @@ html[lang="nm"] #siteTable .thing .md h3 {
 #siteTable .thing .md ol,
 .wiki-page-content .md ol,
 .commentarea .thing .md ol {
-  border-right: solid 1px #eaeaea;
-  border-left: solid 1px #eaeaea;
-  border-top: solid 1px #eaeaea;
-  line-height: 20px;
-  font-size: 14px;
-  padding: 0;
+	border-right: solid 1px #eaeaea;
+	border-left: solid 1px #eaeaea;
+	border-top: solid 1px #eaeaea;
+	line-height: 20px;
+	font-size: 14px;
+	padding: 0;
 }
 #siteTable .thing .md ul li,
 .wiki-page-content .md ul li,
@@ -2940,9 +2939,9 @@ html[lang="nm"] #siteTable .thing .md h3 {
 #siteTable .thing .md ol li,
 .wiki-page-content .md ol li,
 .commentarea .thing .md ol li {
-  border-bottom: solid 1px #eaeaea;
-  padding: 5px;
-  background-color: #f2f2f2
+	border-bottom: solid 1px #eaeaea;
+	padding: 5px;
+	background-color: #f2f2f2
 }
 #siteTable .thing .md ul li:nth-child(even),
 .wiki-page-content .md ul li:nth-child(even),
@@ -2955,111 +2954,100 @@ html[lang="nm"] #siteTable .thing .md h3 {
 #siteTable .thing .md ul,
 .wiki-page-content .md ul,
 .commentarea .md ul {
-  list-style-image: url(%%liststyledash%%);
-  list-style-position: inside;
+	list-style-image: url(%%liststyledash%%);
+	list-style-position: inside;
 }
 #siteTable .thing .md ol,
 .wiki-page-content .md ol,
 .commentarea .thing .md ol {
-  list-style-position: inside;
+	list-style-position: inside;
 }
 .res-nightmode .wiki-page-content .md ul,html[lang="nm"] .wiki-page-content .md ul {
 	border: none!important;
 }
-
-#siteTable .thing .md blockquote,
-.wiki-page-content .md blockquote,
-.commentarea .thing .md blockquote {
-  padding: 1px 10px 10px 10px;
-  border-left: solid 5px #aaaaaa;
-  background-color: #f2f2f2;
-  color: #2f2f2f;
-  line-height: 20px;
-  font-size: 14px;
-}
 #siteTable .thing .md hr,
 .wiki-page-content .md hr,
 .commentarea .md hr {
-  margin: 20px;
-  background-color: #cccccc;
-  border: none;
-  height: 1px;
+	margin: 20px;
+	background-color: #cccccc;
+	border: none;
+	height: 1px;
 }
 #siteTable .thing .md code,
 .wiki-page-content .md code,
 .commentarea .thing .md code {
-  background-color: #f2f2f2;
-  display: inline-block;
-  padding: 2px 4px;
+	background-color: #f2f2f2;
+	display: inline-block;
+	padding: 2px 4px;
 }
 #siteTable .thing .md table thead tr th,
 .commentarea .thing .md table thead tr th,
 .wiki-page-content .md table thead tr th {
-  font-weight: normal;
-  padding: 10px 20px;
-  font-size: 14px;
-  border: none;
+	font-weight: normal;
+	padding: 10px 20px;
+	font-size: 14px;
+	border: none;
 }
 #siteTable .thing .md table tbody tr,
 .commentarea .thing .md table tbody tr,
 .wiki-page-content .md table tbody tr {
-  border-bottom: solid 1px #eaeaea;
+	border-bottom: solid 1px #eaeaea;
 }
 #siteTable .thing .md table tbody tr td,
 .commentarea .thing .md table tbody tr td,
 .wiki-page-content .md table tbody tr td {
-  padding: 10px 20px;
-  border: none;
+	padding: 10px 20px;
+	border: none;
 }
 #siteTable .thing .md pre,
 .wiki-page-content .md pre,
 .commentarea .thing .md pre {
-  font-family: Consolas, Monaco, Courier New, Courier, monospace;
-  padding: 18px 10px 18px 52px;
-  background-color: #f2f2f2;
-  position: relative;
-  line-height: 18px;
-  font-size: 12px;
-  display: block;
-  width: auto;
+	font-family: Consolas, Monaco, Courier New, Courier, monospace;
+	padding: 18px 10px 18px 52px;
+	background-color: #f2f2f2;
+	position: relative;
+	line-height: 18px;
+	font-size: 12px;
+	display: block;
+	width: auto;
 }
 #siteTable .thing .md pre:before,
 .wiki-page-content .md pre:before,
 .commentarea .thing .md pre:before {
-  content: '#  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  124  125  126  127  128  129  130  131  132  133  134  135  136  137  138  139  140  141  142  143  144  145  146  147  148  149  150  151  152  153  154  155  156  157  158  159  160  161  162  163  164  165  166  167  168  169  170  171  172  173  174  175  176  177  178  179  180  181  182  183  184  185  186  187  188  189  190  191  192  193  194  195  196  197  198  199  200  201  202  203  204  205  206  207  208  209  210  211  212  213  214  215  216  217  218  219  220  221  222  223  224  225  226  227  228  229  230  231  232  233  234  235  236  237  238  239  240  241  242  243  244  245  246  247  248  249  250  251  252  253  254  255  256  257  258  259  260  261  262  263  264  265  266  267  268  269  270  271  272  273  274  275  276  277  278  279  280  281  282  283  284  285  286  287  288  289  290  291  292  293  294  295  296  297  298  299  300  301  302  303  304  305  306  307  308  309  310  311  312  313  314  315  316  317  318  319  320  321  322  323  324  325  326  327  328  329  330  331  332  333  334  335  336  337  338  339  340  341  342  343  344  345  346  347  348  349  350  351  352  353  354  355  356  357  358  359  360  361  362  363  364  365  366  367  368  369  370  371  372  373  374  375  376  377  378  379  380  381  382  383  384  385  386  387  388  389  390  391  392  393  394  395  396  397  398  399  400  401  402  403  404  405  406  407  408  409  410  411  412  413  414  415  416  417  418  419  420  421  422  423  424  425  426  427  428  429  430  431  432  433  434  435  436  437  438  439  440  441  442  443  444  445  446  447  448  449  450  451  452  453  454  455  456  457  458  459  460  461  462  463  464  465  466  467  468  469  470  471  472  473  474  475  476  477  478  479  480  481  482  483  484  485  486  487  488  489  490  491  492  493  494  495  496  497  498  499  500  ';
-  border-right: solid 2px #aaaaaa;
-  background-color: #cccccc;
-  padding: 0px 10px 0px 5px;
-  white-space: pre-wrap;
-  position: absolute;
-  line-height: 18px;
-  text-align: right;
-  overflow: hidden;
-  font-size: 12px;
-  height: 100%;
-  width: 25px;
-  left: 0px;
-  top: 0px;
+	content: '#  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117  118  119  120  121  122  123  124  125  126  127  128  129  130  131  132  133  134  135  136  137  138  139  140  141  142  143  144  145  146  147  148  149  150  151  152  153  154  155  156  157  158  159  160  161  162  163  164  165  166  167  168  169  170  171  172  173  174  175  176  177  178  179  180  181  182  183  184  185  186  187  188  189  190  191  192  193  194  195  196  197  198  199  200  201  202  203  204  205  206  207  208  209  210  211  212  213  214  215  216  217  218  219  220  221  222  223  224  225  226  227  228  229  230  231  232  233  234  235  236  237  238  239  240  241  242  243  244  245  246  247  248  249  250  251  252  253  254  255  256  257  258  259  260  261  262  263  264  265  266  267  268  269  270  271  272  273  274  275  276  277  278  279  280  281  282  283  284  285  286  287  288  289  290  291  292  293  294  295  296  297  298  299  300  301  302  303  304  305  306  307  308  309  310  311  312  313  314  315  316  317  318  319  320  321  322  323  324  325  326  327  328  329  330  331  332  333  334  335  336  337  338  339  340  341  342  343  344  345  346  347  348  349  350  351  352  353  354  355  356  357  358  359  360  361  362  363  364  365  366  367  368  369  370  371  372  373  374  375  376  377  378  379  380  381  382  383  384  385  386  387  388  389  390  391  392  393  394  395  396  397  398  399  400  401  402  403  404  405  406  407  408  409  410  411  412  413  414  415  416  417  418  419  420  421  422  423  424  425  426  427  428  429  430  431  432  433  434  435  436  437  438  439  440  441  442  443  444  445  446  447  448  449  450  451  452  453  454  455  456  457  458  459  460  461  462  463  464  465  466  467  468  469  470  471  472  473  474  475  476  477  478  479  480  481  482  483  484  485  486  487  488  489  490  491  492  493  494  495  496  497  498  499  500  ';
+	border-right: solid 2px #aaaaaa;
+	background-color: #cccccc;
+	padding: 0px 10px 0px 5px;
+	white-space: pre-wrap;
+	position: absolute;
+	line-height: 18px;
+	text-align: right;
+	overflow: hidden;
+	font-size: 12px;
+	height: 100%;
+	width: 25px;
+	left: 0px;
+	top: 0px;
 }
 #siteTable .thing .md pre:after,
 .wiki-page-content .md pre:after,
 .commentarea .thing .md pre:after {
-  background-color: #cccccc;
-  position: absolute;
-  height: 18px;
-  content: '';
-  bottom: 0px;
-  width: 40px;
-  z-index: 1;
-  left: 0px;
+	background-color: #cccccc;
+	position: absolute;
+	height: 18px;
+	content: '';
+	bottom: 0px;
+	width: 40px;
+	z-index: 1;
+	left: 0px;
 }
 #siteTable .thing .md pre code,
 .wiki-page-content .md pre code,
 .commentarea .thing .md pre code {
-  background-color: transparent !important;
-  line-height: 18px !important;
-  display: block !important;
-  padding: 0px !important;
+	background-color: transparent !important;
+	line-height: 18px !important;
+	display: block !important;
+	padding: 0px !important;
 }
 
 html[lang="nm"] #siteTable .thing .md ul,
@@ -3087,12 +3075,12 @@ html[lang="nm"] #siteTable .thing .md pre code,html[lang="nm"] .wiki-page-conten
 html[lang="nm"] #siteTable .thing .md pre:before,html[lang="nm"] .wiki-page-content .md pre:before,html[lang="nm"] .commentarea .thing .md pre:before,
 .res-nightmode #siteTable .thing .md pre:before,.res-nightmode .wiki-page-content .md pre:before,.res-nightmode .commentarea .thing .md pre:before {
 	border-right: solid 2px #aaa;
-  background-color: #444;
+	background-color: #444;
 }
 
 html[lang="nm"] #siteTable .thing .md pre:after,html[lang="nm"] .wiki-page-content .md pre:after,html[lang="nm"] .commentarea .thing .md pre:after,
 .res-nightmode #siteTable .thing .md pre:after,.res-nightmode .wiki-page-content .md pre:after,.res-nightmode .commentarea .thing .md pre:after {
-	    background-color: #444;
+	background-color: #444;
 }
 
 html[lang="nm"] #siteTable .thing .md pre,html[lang="nm"] .wiki-page-content .md pre,html[lang="nm"] .commentarea .thing .md pre,
@@ -3111,16 +3099,11 @@ html[lang="nm"] #siteTable .thing .md code,html[lang="nm"] .wiki-page-content .m
 	background-color: transparent;
 }
 
-html[lang="nm"] #siteTable .thing .md p a:hover,html[lang="nm"] .commentarea .thing .md p a:hover,
-.res-nightmode #siteTable .thing .md p a:hover,.res-nightmode .commentarea .thing .md p a:hover {
-	color:#8463e6!important;
-}
-
 html[lang="nm"] .commentarea .thing .md table thead tr th,
 .res-nightmode .commentarea .thing .md table thead tr th,
 html[lang="nm"] #siteTable .thing .md table thead tr th,
 .res-nightmode #siteTable .thing .md table thead tr th {
-  background-color:#333!important;
+	background-color:#333!important;
 }
 
 /* H2 Sidebar Fix*/
@@ -3185,12 +3168,12 @@ html[lang="nm"] .md hr,.res-nightmode .md hr {color: #888;}
 
 html[lang="nm"] .wiki-page-content .md ul li:nth-child(odd),
 .res-nightmode .wiki-page-content .md ul li:nth-child(odd) {
-  background-color: #303030;
+	background-color: #303030;
 }
 
 html[lang="nm"] .wiki-page-content .md ul li:nth-child(even),
 .res-nightmode .wiki-page-content .md ul li:nth-child(even) {
-  background-color: #353535!important;
+	background-color: #353535!important;
 }
 
 html[lang="nm"] .wiki-page-content .md ul li,
@@ -3212,9 +3195,9 @@ html[lang="nm"] .wiki-page-content .md ol li,
 .res-nightmode #siteTable .thing .md ol li,
 .res-nightmode .commentarea .thing .md ol li,
 .res-nightmode .wiki-page-content .md ol li {
-  border-bottom: solid 1px #555;
-  background-color: #222;
-  padding: 5px;
+	border-bottom: solid 1px #555;
+	background-color: #222;
+	padding: 5px;
 }
 
 html[lang="nm"] #siteTable .thing .md ul li:nth-child(odd),
@@ -3240,11 +3223,11 @@ html[lang="nm"] .wiki-page-content .md ol,
 .res-nightmode #siteTable .thing .md ol,
 .res-nightmode .commentarea .thing .md ol,
 .res-nightmode .wiki-page-content .md ol {
-  border-right: solid 1px #555;
-  border-left: solid 1px #555;
-  border-top: solid 1px #555;
-  line-height: 20px;
-  font-size: 14px;
+	border-right: solid 1px #555;
+	border-left: solid 1px #555;
+	border-top: solid 1px #555;
+	line-height: 20px;
+	font-size: 14px;
 }
 
 
@@ -3402,8 +3385,8 @@ html[lang="nm"] .commentarea .child .thing.comment .comment .comment .comment .c
 .res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
 .res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
 .res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
-  background: #292929 !important;
-  border:1px solid #333 !important;
+	background: #292929 !important;
+	border:1px solid #333 !important;
 }
 
 
@@ -3504,8 +3487,8 @@ html[lang="nm"] 	.commentarea textarea:not(:focus):not(:hover),
 .res-nightmode 	.commentarea textarea:not(:focus):not(:hover) {
     color: transparent;
     background-color: #444 !important;
-		text-shadow: 0px 0px 12px #000;
-	}
+	text-shadow: 0px 0px 12px #000;
+}
 
 html[lang="nm"] 	.commentarea textarea:hover,
 html[lang="nm"] .roundfield textarea:hover,
@@ -3580,7 +3563,9 @@ html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/pokemonexchange"] {
 
 /*NM HEADER*/
 
-[lang="nm"] #header,.res-nightmode #header {background-image: url(%%nmbanner%%);}
+[lang="nm"] #header,.res-nightmode #header {
+	background-image: url(%%nmbanner%%);
+}
 
 /*SUBREDDIT NAME*/
 .titlebox h1.redditname a {
@@ -3591,7 +3576,7 @@ html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/pokemonexchange"] {
 .titlebox h1.redditname a::before {
     font-size: 20px;
     content:"Pokemon Exchange";
-		display: inline;
+	display: inline;
 }
 
 /*——————————————————————————————————————————————
@@ -3654,9 +3639,9 @@ color.
 /*FIX REDDIT GOLD HIGHLIGHT*/
 
 html[lang="nm"] .new-comment .usertext-body,.res-nightmode .new-comment .usertext-body {
-background-color: #2c2c2c;
-border: 1px solid #0c0c0c;
-margin: -1px 0;
+	background-color: #2c2c2c;
+	border: 1px solid #0c0c0c;
+	margin: -1px 0;
 }
 
 /*END FIX HIGHLIGHT*/
@@ -3664,8 +3649,8 @@ margin: -1px 0;
 /*hides the downvote arrow*/
 
 .arrow.down {
-visibility: hidden;
-display: none
+	visibility: hidden;
+	display: none
 }
 
 /* Dropdown (sidebar) */
@@ -3681,7 +3666,7 @@ display: none
 	    background: #6941E1;
 	    text-align: center;
 	    border-radius: 5px 5px 0 0;
-			margin-top: 16px;
+		margin-top: 16px;
 	}
 
 	.side .md h4 a {color: #fff}
@@ -3706,7 +3691,7 @@ display: none
 	    border-top: 0;
 	    padding: 10px 10px 10px 26px;
 	    margin: 0 0px 20px 0px;
-			list-style-type: none;
+		list-style-type: none;
 	}
 
 	.titlebox .md h4 + ul {
@@ -3715,7 +3700,7 @@ display: none
 	.titlebox .md h4:hover + ul,
 	.titlebox .md h4 + ul:hover {
 	    display: block!important;
-			text-decoration: none!important;
+		text-decoration: none!important;
 	}
 
 	.titlebox .md h2 a:active {
@@ -3723,7 +3708,7 @@ display: none
 	}
 
 
-  html[lang="nm"] .side .md h4 + ul {
+	html[lang="nm"] .side .md h4 + ul {
 		background: #3a3a3a;
 	}
 
@@ -3767,13 +3752,13 @@ html[lang="nm"] .side .md h2+ol,
 /*Change the word for 'readers' and the currently online*/
 
 .subscribers .word, .users-online .word{
-display:none;
+	display:none;
 }
 .subscribers .number:after {
-content: " Pokemon trainers"
+	content: " Pokemon trainers"
 }
 .users-online .number:after {
-content: " training to be the very best"
+	content: " training to be the very best"
 }
 
 /*Hiding domain*/
@@ -3817,21 +3802,20 @@ content: " training to be the very best"
 /*  **********************FLAIRS*********************** */
 
 .flair::before, a[href^="#pk-"], a[href^="#bs-"] {
-content: "";
-display: inline-block;
-vertical-align: middle;
-background-image: url(%%monssprites%%);
-width: 30px;
-height: 30px;
-margin: 0px 5px;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(%%monssprites%%);
+	width: 30px;
+	height: 30px;
+	margin: 0px 5px;
 }
 
 .flair::after, a[href^="#ref-"]{
-content: "";
-background-image: url(%%mflairs%%);
-
-display: inline-block;
-vertical-align: middle;
+	content: "";
+	background-image: url(%%mflairs%%);
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .flair-banned::after {
@@ -3846,84 +3830,84 @@ vertical-align: middle;
 
 
 a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
-text-indent: -999em;
-cursor: auto;
+	text-indent: -999em;
+	cursor: auto;
 }
 
 .flair-shiny::before, a[href$="-shiny"] {
-background-image: url(%%shinymonssprites%%);
+	background-image: url(%%shinymonssprites%%);
 }
 
 .flair-bw::before, a[href$="-bw"] {
-background-image: url(%%monsspritebw%%);
+	background-image: url(%%monsspritebw%%);
 }
 
 .flair-balls::before, a[href^="#bs-"] {
-background-image: url(%%ballsprites%%);
-width: 24px;
-height: 24px;
+	background-image: url(%%ballsprites%%);
+	width: 24px;
+	height: 24px;
 }
 
 .flair-masterball::before, a[href$="#bs-masterball"] {
-background-position: 0px -2px;
+	background-position: 0px -2px;
 }
 
 .flair-ultraball::before, a[href$="#bs-ultraball"] {
-background-position: -24px -2px;
+	background-position: -24px -2px;
 }
 
 .flair-greatball::before, a[href$="#bs-greatball"] {
-background-position: -48px -2px;
+	background-position: -48px -2px;
 }
 
 .flair-pokeball::before, a[href$="#bs-pokeball"] {
-background-image: url(%%ballsprites%%);
-background-position: -72px -2px;
-width: 24px;
-height: 24px;
+	background-image: url(%%ballsprites%%);
+	background-position: -72px -2px;
+	width: 24px;
+	height: 24px;
 }
 
 .flair-cherishball::before, a[href$="#bs-cherishball"] {
-background-position: 0px -74px;
+	background-position: 0px -74px;
 }
 
 .flair-parkball::before, a[href$="#bs-parkball"] {
-background-position: -120px -74px;
+	background-position: -120px -74px;
 }
 
 .flair-dreamball::before, a[href$="#bs-dreamball"] {
-background-position: -96px -98px;
+	background-position: -96px -98px;
 }
 
 /* Reference flairs */
 .flair-bigmushroom::after, a[href$="#ref-bigmushroom"] {
-background-position: 6px 0px;
-width: 30px;
-height: 24px;
+	background-position: 6px 0px;
+	width: 30px;
+	height: 24px;
 }
 
 .flair-bignugget::after, a[href$="#ref-bignugget"] {
-background-position: -24px 0px;
-width: 30px;
-height: 24px;
+	background-position: -24px 0px;
+	width: 30px;
+	height: 24px;
 }
 
 .flair-bigpearl::after, a[href$="#ref-bigpearl"] {
-background-position: -59px 0px;
-width: 24px;
-height: 24px;
+	background-position: -59px 0px;
+	width: 24px;
+	height: 24px;
 }
 
 .flair-commetshard::after, a[href$="#ref-commetshard"] {
-background-position: -89px 0px;
-width: 24px;
-height: 24px;
+	background-position: -89px 0px;
+	width: 24px;
+	height: 24px;
 }
 
 .flair-reliccrown::after, a[href$="#ref-reliccrown"] {
-background-position: -118px 0px;
-width: 28px;
-height: 24px;
+	background-position: -118px 0px;
+	width: 28px;
+	height: 24px;
 }
 
 /*POKEMON FLAIRS*/
@@ -3945,19 +3929,19 @@ height: 24px;
 }
 
 .flair-genesect::before {
-background-position: -180px -721px;
+	background-position: -180px -721px;
 }
 
 .flair-gengar::before {
-background-position: -1161px -90px;
+	background-position: -1161px -90px;
 }
 
 .flair-klinklang::before {
-background-position: -1164px -663px;
+	background-position: -1164px -663px;
 }
 
 .flair-litten::before {
-background-position: -1242px -845px;
+	background-position: -1242px -845px;
 }
 
 .flair-charizard::before {
@@ -4090,6 +4074,10 @@ html[lang=nm] .listing-page .stickied.link,.res-nightmode .listing-page .stickie
 	font-size:12px;
 }
 
+.link .flair {
+	font-size: 12px;
+}
+
 
 /* NSFW Button Customization*/
 
@@ -4164,21 +4152,6 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 
 .link:hover .entry .buttons li + li { display: inline!important;}
 
-/* User Notes */
-
-.usernote-button #add-user-tag {
-	color: black;
-}
-
-.mod-toolbox.res-nightmode .tb-popup {
-    background-color: #fff!important;
-}
-
-.mod-toolbox.res-nightmode .tb-popupheader {
-    background-color: rgb(206, 227, 248);
-	color: #222222;
-}
-
 /*Misc RES Night Mode Fixes*/
 
 .res-nightmode .res .RES-keyNav-activeElement .md-container > .md, .res-nightmode .res .RES-keyNav-activeElement .md-container > .md p {
@@ -4234,7 +4207,7 @@ html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md
 }
 
 .res-nightmode #siteTable .thing .md pre:after,html[lang="nm"] .wiki-page-content .md pre:after,html[lang="nm"] .commentarea .thing .md pre:after {
-	    background-color: #444;
+    background-color: #444;
 }
 
 .res-nightmode .sidebox {
@@ -4268,7 +4241,7 @@ html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md
 }
 
 .res-nightmode .side .submit .morelink:hover a {
-  color:white!important;
+	color:white!important;
 }
 
 .res-nightmode .wiki-page .wiki-page-content .md.wiki > .toc ul {
