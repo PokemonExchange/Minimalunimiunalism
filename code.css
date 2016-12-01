@@ -323,18 +323,26 @@ img.RESImage {border-radius: 12px;}
 	.action-form ol {margin-bottom: 15px;}
 
 .pretty-button {
-	background: none !important;
-	font-weight: bold;
-	padding: 1px 5px;
-	border-radius: 20px;
-	font-size: 10px !important;
-	border: medium none !important;
-	text-transform: uppercase;
+	border: 1px solid #222;
+	padding: 3px 10px;
+	color: #222!important;
+	border-radius: 2px;
+	display: inline-block;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-weight: 700;
+	font-family: Arial,sans-serif;
+}
+
+.pretty-button.positive {
+	background-image: url(%%pretty-button%%);
+	background-position: 0px -156px;
+	background-repeat: repeat;
 }
 
 .pretty-button.negative {color: #D10023;}
 .pretty-button.neutral {color: #444;}
-.pretty-button.positive {color: #2B8B27;}
 
 .pretty-button.pressed  {font-size: 0px !important;}
 .pretty-button.pressed:after {font-size: 10px; content: "Action Done"; text-transform: uppercase; font-weight: bold;}
@@ -3331,8 +3339,7 @@ html[lang="nm"] .sidecontentbox .collapse-button,.res-nightmode .sidecontentbox 
 
 html[lang="nm"] body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,html[lang="nm"] .commentarea span.score,
 .res-nightmode body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,.res-nightmode .commentarea span.score,
-html[lang="nm"] .side .md h4 a, .res-nightmode .side .h4 a,
-html[lang="nm"] .content .md a,.res-nightmode .content .md a {color: #fff!important}
+html[lang="nm"] .side .md h4 a, .res-nightmode .side .h4 a {color: #fff!important}
 
 html[lang="nm"] .side .md h4, .res-nightmode .side .md h4 {background: #6941E1}
 
@@ -3925,8 +3932,8 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 	background-position: -180px -721px;
 }
 
-.flair-gengar::before {
-	background-position: -1161px -90px;
+.flair-marowak::before {
+	background-position: -367px -125px;
 }
 
 .flair-klinklang::before {
@@ -4034,11 +4041,12 @@ html[lang="nm"] .wiki-page-content a[href*="#wiki-"],
 	border-radius: 3px!important;
 	border:none!important;
 	display: block;
+	transition: .5s ease;
 	box-shadow:3px 3px 5px rgba(25,41,180,.4);
 }
 
 a[href*="#btn"]:hover {
-	background-color: #0079d3!important;
+	background-color: #0088ed!important;
 }
 
 html[lang="nm"] a[href*="#btn"]:hover,.res-nightmode a[href*="#btn"]:hover {
@@ -4255,6 +4263,34 @@ html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md
 
 .res .RES-keyNav-activeElement, .res .RES-keyNav-activeElement .md-container, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed, .res-nightmode .res .RES-keyNav-activeElement, .res-nightmode .res .RES-keyNav-activeElement .md-container, .res-nightmode .res .commentarea .RES-keyNav-activeElement .md, .res-nightmode .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
 	background: 0 0!important;
+}
+
+/* Color Removed Comments */
+
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment 
+.comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment .comment .comment 
+.comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment .comment .comment 
+.comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment 
+.comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment 
+.comment .comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment 
+.comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment 
+.comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment 
+.comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment .comment 
+.comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment .comment 
+.comment div.thing.spam, .commentarea .comment .comment .comment .comment .comment .comment div.thing.reported, 
+.commentarea .comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment 
+.comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment 
+div.thing.spam, .commentarea .comment .comment .comment .comment div.thing.reported, .commentarea .comment 
+.comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment div.thing.reported, 
+.commentarea .comment .comment .comment div.thing.spam, .commentarea .comment .comment div.thing.reported, 
+.commentarea .comment .comment div.thing.spam, .commentarea .comment div.thing.reported, 
+.commentarea .comment div.thing.spam, div.thing.reported, div.thing.spam {
+	background: #F9ADAD!important;
+	border: 2px solid #FB7A7A!important;
+}
+
+.comment.spam>.child, .message.spam>.child {
+	background-color: #F9ADAD!important;
 }
 /*
 Credits
