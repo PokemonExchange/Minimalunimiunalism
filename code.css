@@ -1145,7 +1145,7 @@ html[lang="nm"] .usertext.border .usertext-body {
 	.wiki-page .wiki-page-content .wiki>.toc>ul {border: none}
 	.wiki-page .wiki-page-content .wiki>.toc>ul ul {border: none}
 
-	.wiki-page .wiki-page-content .wiki.md {color: #4D5763;}
+	.wiki-page .wiki-page-content .wiki.md {color: #222;}
 
 		.wiki-page .wiki-page-content .wiki.md h2 {color: #444;}
 
@@ -2874,14 +2874,21 @@ form#image-upload.image-upload {
 }
 #siteTable .thing .md h3 {
 	color:#2f2f2f;
+	font-size: 24px;
 }
-
+.wiki-page-content .md h3 {
+	color: #555;
+	font-size: 24px;
+}
+.res-nightmode .wiki-page-content .md h3,
+html[lang="nm"] .wiki-page-content .md h3 {
+	color: #cccccc;
+}
 .res-nightmode #siteTable .thing .md h3,
 html[lang="nm"] #siteTable .thing .md h3 {
 	color:#8464e6;
 }
-#siteTable .thing .md h3:before,
-.wiki-page-content .md h3:before {
+#siteTable .thing .md h3:before {
 	color: #999999;
 	content: '> ';
 }
@@ -2899,7 +2906,7 @@ html[lang="nm"] #siteTable .thing .md h3 {
 #siteTable .thing .md h5,
 .wiki-page-content .md h5 {
 	margin: -5px 10px 10px 10px;
-	color: #666666;
+	color: #444;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	font-style: italic;
@@ -3309,7 +3316,7 @@ html[lang="nm"] #sr-header-area a,html[lang="nm"] h2,html[lang="nm"] .sideconten
 
 html[lang="nm"] a.comments::after,.res-nightmode a.comments::after {color: #ccc!important}
 
-html[lang="nm"] .flair,.res-nightmode .flair {border: none}
+html[lang="nm"] .flair,.res-nightmode .flair {border: none; color: #aaa;}
 
 html[lang="nm"] .side,.res-nightmode .side {border: #4c4c4c;background:#333}
 
@@ -3546,6 +3553,10 @@ html[lang="nm"] .tabmenu {background: #333;}
 html[lang="nm"] .side .md h2 + ul,.res-nightmode .side .md h2 + ul {background: #3a3a3a;}
 
 html[lang="nm"] .side .sidecontentbox a,.res-nightmode .side .sidecontentbox a {color: #ccc}
+
+html[lang="nm"] .md a {color:#8cb3d9;}
+
+html[lang="nm"] .titlebox .md a {color: #fff;}
 
 /*TOGGLE*/
 .side .md h3 a[href*="http://www.reddit.com/r/pokemonexchange"] {
