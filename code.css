@@ -276,7 +276,16 @@ div#RESStyleSheetTipPane-header {border: none !important;}
 		transition: all 0.15s ease;
 	 }
 
-.sr-bar a.gold {color: gold;}
+.sr-bar a.gold {color: #fff;font-weight: normal;}
+
+body.res #sr-header-area .res .sr-bar a.RESShortcutsCurrentSub {
+	color: #f2f7ff!important;
+}
+
+#sr-header-area a.RESShortcutsCurrentSub {
+    font-weight: normal;
+    color: #3388ff!important;
+}
 
 .icon-menu a {background: none;}
 
@@ -343,9 +352,6 @@ img.RESImage {border-radius: 12px;}
 
 .pretty-button.negative {color: #D10023;}
 .pretty-button.neutral {color: #444;}
-
-.pretty-button.pressed  {font-size: 0px !important;}
-.pretty-button.pressed:after {font-size: 10px; content: "Action Done"; text-transform: uppercase; font-weight: bold;}
 
 
 button[disabled] {display:none;}
@@ -1474,9 +1480,7 @@ body {background: #e6e6e8;}
 */
 
 
-        #sr-header-area .drop-choices.srdrop,
-        .res #srList,
-        .res #RESSubredditGroupDropdown {
+        #sr-header-area .drop-choices.srdrop {
 			top: 30px!important;
 			margin-left: 10px;
 			border: 0;
@@ -1486,77 +1490,11 @@ body {background: #e6e6e8;}
 			font-size: 9px;
 			border-radius: 6px;
         }
-
-        .res #srList {background: rgba(0, 0, 0, 0.75);}
         #sr-header-area .drop-choices.srdrop { top: 21px!important; background: rgba(0, 0, 0, 0.9); }
-
-        .res #srList {
-			display: block!important;
-			background: transparent;
-			position: fixed;
-			left: 50%;
-			margin-left: -250px;
-			width: 500px;
-			height: calc(100vh - 60px);
-			padding-top: 0;
-			overflow: visible;
-			max-height: none!important;
-			opacity: 1;
-			pointer-events: auto;
-			transition: .2s;
-			z-index: 2147483647
-        }
-
-        .res #srList:not([style*="display: block"]),
-        .res #srList:not([style*="display: block"]):before,
-        .res #srList:not([style*="display: block"]):after {
-			opacity: 0;
-			pointer-events: none
-        }
-
-        .res #srList tbody { display: block; max-height: calc(100% - 50px); overflow: scroll; background: transparent; }
-
-        .res #srList:before {
-			position: fixed;
-			left: 50%;
-			margin-left: -250px;
-			top: 30px;
-			width: 500px;
-			height: calc(100vh - 60px);
-			background: rgba(0, 0, 0, 0.8);
-			content: "";
-			z-index: -1;
-			transition: .2s opacity;
-			border-radius: 4px;
-        }
-
-        .res #srList:after {
-			position: fixed;
-			left: 0;
-			top: 0;
-			width: 100vw;
-			height: 100vh;
-			padding: 50px 70px 0 0;
-			background: rgba(0,0,0,.6);
-			background-size: 100px 100px, cover, cover;
-			background-position: center, center, center;
-			content: "✕";
-			text-align: right;
-			text-transform: lowercase;
-			font-size: 40px;
-			font-weight: 100;
-			color: #fff;
-			z-index: -2;
-			transition: .2s opacity;
-			pointer-events: none;
-			margin-left: -35px; /*Adjusts the close icon*/
-        }
 
         .sortAsc, .sortDesc { margin-top: -46px; margin-right: 10px }
 
-        #sr-header-area .drop-choices.srdrop a,
-        .res #srList tr,
-        .res #RESSubredditGroupDropdown li a {
+        #sr-header-area .drop-choices.srdrop a {
 			height: 25px;
 			padding: 0 10px;
 			border-top: solid 1px #444;
@@ -1565,13 +1503,7 @@ body {background: #e6e6e8;}
 			color: #ccc
         }
 
-        .res #srList thead {
-			display: block;
-			height: 50px;
-        }
-
-        #sr-header-area .drop-choices.srdrop:before,
-        .res #srList thead td:nth-of-type(1) {
+        #sr-header-area .drop-choices.srdrop:before {
 			height: 50px;
 			line-height: 45px;
 			font-size: 13px;
@@ -1582,40 +1514,8 @@ body {background: #e6e6e8;}
 
         #sr-header-area .drop-choices.srdrop:before { padding: 0 50px 0 10px }
 
-        .res #srList thead td:nth-of-type(1):before { content: "SUBSCRIBED " }
-        .res #srList thead td:nth-of-type(1):after { margin-left: -5px; content: "S" }
 
-        .res #srList thead tr {
-			height: 50px;
-			line-height: 50px;
-			white-space: nowrap
-        }
-
-        .res #srList td { padding: 0 }
-        .res #srList tr td:nth-of-type(1) { width: 300px }
-        .res #srList td.RESvisited { width: 120px }
-        .res #srList td.RESshortcut { width: 60px }
-
-        .res #srList td.RESvisited,
-        .res #srList td.RESshortcut { text-transform: uppercase }
-
-        .res #srList a,
-        .res #RESSubredditGroupDropdown .RESShortcutsEditButtons .res-icon { color: #fff }
-
-        #sr-header-area .drop-choices.srdrop a,
-        .res #RESSubredditGroupDropdown li a { display: block; min-width: 50% }
-
-        .res #srList thead tr,
-        .res #RESSubredditGroupDropdown li:nth-of-type(1) a { border: 0 }
-
-        .res #RESSubredditGroupDropdown li + .RESShortcutsEditButtons { margin: 0; border: 0; padding: 0 }
-        .res #RESSubredditGroupDropdown li + .RESShortcutsEditButtons a.delete { text-align: right }
-
-        .res #RESSubredditGroupDropdown li { margin: 0; padding: 0 }
-
-        .res #srList tr:hover,
-        .res #RESSubredditGroupDropdown li:hover { background: none }
-
+        #sr-header-area .drop-choices.srdrop a { display: block; min-width: 50% }
 
 
 body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub {color: #fff!important; /*Color of sub selector, active*/}
@@ -1749,6 +1649,7 @@ h2 {
 	padding-top: 5px;
 	padding-bottom: 5px;
  }
+ 
 
 /*Subscribe+Sidebar Toggles*/
 
@@ -3588,6 +3489,12 @@ html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/pokemonexchange"] {
 	font-size: 20px;
 	content:"Pokemon Exchange";
 	display: inline;
+}
+
+/* HIDE RES AD */
+
+.ad300x250, .sponsor-300-250 { 
+	display: none!important;
 }
 
 /*——————————————————————————————————————————————
