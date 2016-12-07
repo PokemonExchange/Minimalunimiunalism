@@ -1517,8 +1517,11 @@ body {background: #e6e6e8;}
 
         #sr-header-area .drop-choices.srdrop a { display: block; min-width: 50% }
 
-
-body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub {color: #fff!important; /*Color of sub selector, active*/}
+/*Color of sub selector, active*/}
+body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub {
+	color: #fff!important;
+	font-weight:bold; 
+}
 
 #sr-header-area a {font-size: 9px; transition: 200ms;}
 
