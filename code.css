@@ -3098,8 +3098,6 @@ html[lang="nm"] .content .entry .buttons li.reported-stamp, html[lang="nm"] body
 	color: #d1d1d1 !important;
 
 }
-html[lang="nm"] .pretty-button.positive,.res-nightmode .pretty-button.positive {color: #7DDC1F !important;}
-
 html[lang="nm"] .pretty-button.neutral,.res-nightmode .pretty-button.neutral {color: #ccc;}
 
 html[lang="nm"] .pretty-button.negative,.res-nightmode .pretty-button.negative {color:#FE728B !important;}
@@ -3383,6 +3381,15 @@ html[lang="nm"] .roundfield input[type="text"]:focus,
 	border: 1px solid #666;
 	transition: 0.1s ease;
 	border-bottom: 3px solid #999 !important;
+}
+
+html[lang="nm"] .fancy-toggle-button .add:hover,
+html[lang="nm"] body.res .RESshortcutside:hover,
+html[lang="nm"] .RESDashboardToggle:hover,
+.res-nightmode .fancy-toggle-button .add:hover,
+.res-nightmode body.res .RESshortcutside:hover,
+.res-nightmode .RESDashboardToggle:hover {
+	background: #492d9d;
 }
 
 html[lang="nm"] .toc ul,.res-nightmode .toc ul {background: transparent;}
@@ -3696,6 +3703,12 @@ html[lang="nm"] .side .md h2+ol,
 	content: " BANNED USER";
 	color: red;
 	font-weight: 700;
+}
+
+.flair-christmassithlatios::before {
+	background-image: url(%%latios%%);
+	background-position: -730px -871px;
+	width: 42px;
 }
 
 
@@ -4129,6 +4142,10 @@ html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md
 	color: #fff!important;
 }
 
+.res-nightmode .usernote-button #add-user-tag {
+    background-color:#333;
+}
+
 /* Fix RES Active Element */
 
 .res .RES-keyNav-activeElement, .res .RES-keyNav-activeElement .md-container, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed, .res-nightmode .res .RES-keyNav-activeElement, .res-nightmode .res .RES-keyNav-activeElement .md-container, .res-nightmode .res .commentarea .RES-keyNav-activeElement .md, .res-nightmode .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
@@ -4163,9 +4180,40 @@ div.thing.spam, .commentarea .comment .comment .comment .comment div.thing.repor
 	border: 2px solid #FB7A7A!important;
 }
 
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment 
+.comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment 
+.comment .comment .comment .comment .comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment 
+.comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported, .res-nightmode 
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam,
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment 
+div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment 
+.comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
+.comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
+.comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
+.comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
+.comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
+div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment div.thing.spam,
+.res-nightmode .commentarea .comment .comment .comment .comment .comment div.thing.reported, .res-nightmode .commentarea 
+.comment .comment .comment .comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment 
+.comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment div.thing.spam,
+.res-nightmode .commentarea .comment .comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment 
+.comment div.thing.spam, .res-nightmode .commentarea .comment .comment div.thing.reported, .res-nightmode .commentarea 
+.comment .comment div.thing.spam, .res-nightmode .commentarea .comment div.thing.reported, .res-nightmode .commentarea 
+.comment div.thing.spam, .res-nightmode .commentarea div.thing.reported, .res-nightmode .commentarea div.thing.spam,
+.res-nightmode div.thing.reported, .res-nightmode div.thing.spam, .res-nightmode.res-commentBoxes .reported.comment,
+.res-nightmode.res-commentBoxes .spam.comment {
+	background: #6A1E1E!important;
+	border: 2px solid #8b2727!important;
+}
+
 .comment.spam>.child, .message.spam>.child {
 	background-color: #F9ADAD!important;
 }
+
+.res-nightmode .comment.spam>.child,.res-nightmode .message.spam>.child {
+	background-color: #6A1E1E!important;
+}
+
 /*
 Credits
 /r/EnTypo for Enhanced Typograhy
