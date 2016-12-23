@@ -266,9 +266,9 @@ div#RESStyleSheetTipPane-header {border: none !important;}
 	padding-top: 20px;
 	border: none;
  }
- 
+
  /* Lists and Tables */
- 
+
  ol {
 	list-style: decimal inside;
 }
@@ -313,7 +313,7 @@ div#RESStyleSheetTipPane-header {border: none !important;}
 	padding: 1px 3px;
 	list-style-type: none;
 }
- 
+
 .md h1+table thead,.md h1+table tr:nth-child(even){background-color:#ccc;}
 .wiki-page-content .md h1+table thead,.md h1+table tr:nth-child(even) {background-color:transparent;}
 html[lang="nm"] .md h1+table thead,html[lang="nm"] .md h1+table tr:nth-child(even),
@@ -1314,7 +1314,7 @@ html[lang="nm"] .usertext.border .usertext-body {
 	border-radius: 4px;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.08);
  }
- 
+
  div#reddit-field.roundfield {display: none;}
 
 
@@ -1646,7 +1646,7 @@ body {background: #e6e6e8;}
 /*Color of sub selector, active*/}
 body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub {
 	color: #fff!important;
-	font-weight:bold; 
+	font-weight:bold;
 }
 
 #sr-header-area a {font-size: 9px; transition: 200ms;}
@@ -1777,7 +1777,7 @@ h2 {
 	padding-top: 5px;
 	padding-bottom: 5px;
  }
- 
+
 a#sr-more-link {
 	color: #000!important;
 	background-color: #6941e1!important;
@@ -2863,7 +2863,7 @@ form#image-upload.image-upload {
 	margin-left: 10px;
 }
 html[lang="nm"] #siteTable .thing .md h1,
-.res-nightmode #siteTable .thing 
+.res-nightmode #siteTable .thing
 	color: #c6c6c6;
 }
 #siteTable .thing .md h2,
@@ -3452,7 +3452,7 @@ html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/pokemonexchange"] {
 
 /* HIDE RES AD */
 
-.ad300x250, .sponsor-300-250 { 
+.ad300x250, .sponsor-300-250 {
 	display: none!important;
 }
 
@@ -3807,6 +3807,10 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 	background-position: -806px -900px;
 }
 
+.flair-rowlet::before {
+	background-position: -1127px -843px;
+}
+
 .flair-charmander::before {
 	background-position: -202px -4px;
 }
@@ -4158,47 +4162,47 @@ html[lang="nm"] .wiki-page-content .md h5,html[lang="nm"] .wiki-page-content .md
 
 /* Color Removed Comments */
 
-.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment 
-.comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment .comment .comment 
-.comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment .comment .comment 
-.comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment 
-.comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment 
-.comment .comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment 
-.comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment 
-.comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment 
-.comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment .comment 
-.comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment .comment 
-.comment div.thing.spam, .commentarea .comment .comment .comment .comment .comment .comment div.thing.reported, 
-.commentarea .comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment 
-.comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment 
-div.thing.spam, .commentarea .comment .comment .comment .comment div.thing.reported, .commentarea .comment 
-.comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment div.thing.reported, 
-.commentarea .comment .comment .comment div.thing.spam, .commentarea .comment .comment div.thing.reported, 
-.commentarea .comment .comment div.thing.spam, .commentarea .comment div.thing.reported, 
+.commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
+.comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment .comment .comment
+.comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment .comment .comment
+.comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment
+.comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment
+.comment .comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment
+.comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment
+.comment .comment .comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment
+.comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment .comment
+.comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment .comment
+.comment div.thing.spam, .commentarea .comment .comment .comment .comment .comment .comment div.thing.reported,
+.commentarea .comment .comment .comment .comment .comment .comment div.thing.spam, .commentarea .comment .comment
+.comment .comment .comment div.thing.reported, .commentarea .comment .comment .comment .comment .comment
+div.thing.spam, .commentarea .comment .comment .comment .comment div.thing.reported, .commentarea .comment
+.comment .comment .comment div.thing.spam, .commentarea .comment .comment .comment div.thing.reported,
+.commentarea .comment .comment .comment div.thing.spam, .commentarea .comment .comment div.thing.reported,
+.commentarea .comment .comment div.thing.spam, .commentarea .comment div.thing.reported,
 .commentarea .comment div.thing.spam, div.thing.reported, div.thing.spam {
 	background: #F9ADAD!important;
 	border: 2px solid #FB7A7A!important;
 }
 
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment 
-.comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment 
-.comment .comment .comment .comment .comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment 
-.comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported, .res-nightmode 
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment
+.comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment
+.comment .comment .comment .comment .comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment
+.comment .comment .comment .comment .comment .comment .comment .comment div.thing.reported, .res-nightmode
 .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment div.thing.spam,
-.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment 
-div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment 
-.comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
-.comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
-.comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
-.comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
-.comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment 
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment
+div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment
+.comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment
+.comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment
+.comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment
+.comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment
+.comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment
 div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment .comment .comment div.thing.spam,
-.res-nightmode .commentarea .comment .comment .comment .comment .comment div.thing.reported, .res-nightmode .commentarea 
-.comment .comment .comment .comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment 
+.res-nightmode .commentarea .comment .comment .comment .comment .comment div.thing.reported, .res-nightmode .commentarea
+.comment .comment .comment .comment .comment div.thing.spam, .res-nightmode .commentarea .comment .comment .comment
 .comment div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comment div.thing.spam,
-.res-nightmode .commentarea .comment .comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment 
-.comment div.thing.spam, .res-nightmode .commentarea .comment .comment div.thing.reported, .res-nightmode .commentarea 
-.comment .comment div.thing.spam, .res-nightmode .commentarea .comment div.thing.reported, .res-nightmode .commentarea 
+.res-nightmode .commentarea .comment .comment .comment div.thing.reported, .res-nightmode .commentarea .comment .comment
+.comment div.thing.spam, .res-nightmode .commentarea .comment .comment div.thing.reported, .res-nightmode .commentarea
+.comment .comment div.thing.spam, .res-nightmode .commentarea .comment div.thing.reported, .res-nightmode .commentarea
 .comment div.thing.spam, .res-nightmode .commentarea div.thing.reported, .res-nightmode .commentarea div.thing.spam,
 .res-nightmode div.thing.reported, .res-nightmode div.thing.spam, .res-nightmode.res-commentBoxes .reported.comment,
 .res-nightmode.res-commentBoxes .spam.comment {
