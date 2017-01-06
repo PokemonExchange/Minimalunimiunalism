@@ -153,6 +153,8 @@ a {
 
 /*UNCATEGORIZED FIXES*/
 
+.md textarea, .md .-text, .md p, .md pre>code, .md th, .md td, .md li {font-size: 13.5px;}
+
 .commentarea span.score {font-weight: bold;}
 
 .deepthread::after {background-image: none; content: ">"; font-weight:bold; font-size: 12px; }
