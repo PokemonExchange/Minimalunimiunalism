@@ -3707,24 +3707,10 @@ html[lang="nm"] .side .md h2+ol,
 	font-weight: 700;
 }
 
-.flair-christmassithlatios::before {
-	background-image: url(%%latios%%);
-	background-position: -730px -871px;
-	width: 42px;
-}
-
 
 a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 	text-indent: -999em;
 	cursor: auto;
-}
-
-.flair-shiny::before, a[href$="-shiny"] {
-	background-image: url(%%shinymonssprites%%);
-}
-
-.flair-bw::before, a[href$="-bw"] {
-	background-image: url(%%monsspritebw%%);
 }
 
 .flair-balls::before, a[href^="#bs-"] {
@@ -3797,55 +3783,85 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 
 /*POKEMON FLAIRS*/
 
-.flair-lunala::before {
-	background-position: -805px -931px;
-}
+	/*willster191*/
+	.flair-christmaslatios::before {
+		background-position: 0px 0px;
+		background-image: url(%%modsprites%%);
+		width: 36px;
+	}
 
-.flair-shedinja::before {
-	background-position: -685px -332px;
-}
+	.flair-tapukoko::before {
+		background-position: 0px -50px;
+		background-image: url(%%modsprites%%);
+	}
 
-.flair-silvally::before {
-	background-position: -806px -900px;
-}
+	/*Vovvy (robertoxmed)*/
 
-.flair-rowlet::before {
-	background-position: -1127px -843px;
-}
+	.flair-tapufini::before {
+		background-position: -50px 0px;
+		background-image: url(%%modsprites%%);
+	}
 
-.flair-charmander::before {
-	background-position: -202px -4px;
-}
+	/*Ida (Merryfellows)*/
 
-.flair-genesect::before {
-	background-position: -180px -721px;
-}
+	.flair-marowak::before {
+		background-position: -100px 0px;
+		background-image: url(%%modsprites%%);
+	}
 
-.flair-marowak::before {
-	background-position: -367px -125px;
-}
+	/*Anna (froakiedokie)*/
 
-.flair-klinklang::before {
-	background-position: -1164px -663px;
-}
+	.flair-litten::before {
+		background-position: -150px 0px;
+		background-image: url(%%modsprites%%);
+	}
 
-.flair-litten::before {
-	background-position: -1242px -845px;
-}
+	.flair-stufful::before {
+		background-position: -150px -50px;
+		background-image: url(%%modsprites%%);
+	}
 
-.flair-charizard::before {
-	background-position: -364px 0px;
-	width: 32px;
-}
+	/*Jay (Upper90715)*/
 
-.flair-pikachupopstar::before {
-	background-position: -121px -30px;
-	height: 27px;
-}
+	.flair-shedinja::before {
+		background-position: -200px 0px;
+		background-image: url(%%modsprites%%);
+	}
 
-.flair-hooh::before {
-	background-position: -125px -300px;
-}
+	/*Bots*/
+
+	.flair-shinygenesect::before {
+		background-position: -250px 0px;
+		background-image: url(%%modsprites%%);
+	}
+
+	.flair-charmander::before {
+		background-position: -250px -50px;
+		background-image: url(%%modsprites%%);
+	}
+
+	.flair-klinklang::before {
+		background-position: -300px 0px;
+		background-image: url(%%modsprites%%);
+	}
+
+	/*Retired moderators*/
+
+	.flair-bwcharizard::before {
+		background-position: -350px 0px;
+		background-image: url(%%modsprites%%);
+		width: 36px;
+	}
+
+	.flair-bwhooh::before {
+		background-position: -350px -50px;
+		background-image: url(%%modsprites%%);
+	}
+
+	.flair-bwpopstarpikachu::before {
+		background-position: -350px -100px;
+		background-image: url(%%modsprites%%);
+	}
 
 /*WIKI BUTTONS*/
 
