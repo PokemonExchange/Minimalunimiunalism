@@ -4247,8 +4247,8 @@ div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comm
 	background-color: #6A1E1E!important;
 }
 
-.view {
-	padding: 0px 100px;
+.views {
+	padding: 0px 100px!important;
 }
 
 /*
