@@ -3802,6 +3802,11 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-image: url(%%modsprites%%);
 	}
 
+	.flair-alolanpersian::before{
+		background-position: -50px -50px;
+		background-image: url(%%modsprites%%);
+	}
+
 	/*Ida (Merryfellows)*/
 
 	.flair-marowak::before {
@@ -3825,6 +3830,12 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 
 	.flair-shedinja::before {
 		background-position: -200px 0px;
+		background-image: url(%%modsprites%%);
+	}
+
+	/* KookyKracks */
+	.flair-haunter::before {
+		background-position: -400px 0px;
 		background-image: url(%%modsprites%%);
 	}
 
@@ -4234,6 +4245,10 @@ div.thing.reported, .res-nightmode .commentarea .comment .comment .comment .comm
 
 .res-nightmode .comment.spam>.child,.res-nightmode .message.spam>.child {
 	background-color: #6A1E1E!important;
+}
+
+.view {
+	padding: 0px 100px;
 }
 
 /*
