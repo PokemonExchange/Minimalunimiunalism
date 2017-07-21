@@ -3837,6 +3837,7 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 	.flair-haunter::before {
 		background-position: -400px 0px;
 		background-image: url(%%modsprites%%);
+		width: 36px;
 	}
 
 	/*Bots*/
