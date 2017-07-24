@@ -3807,6 +3807,11 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-image: url(%%modsprites%%);
 	}
 
+	.flair-scrafty::before {
+		background-position: -50px -100px;
+		background-image: url(%%modsprites%%);
+	}
+
 	/*Ida (Merryfellows)*/
 
 	.flair-marowak::before {
