@@ -3458,6 +3458,10 @@ html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/pokemonexchange"] {
 	display: none!important;
 }
 
+.content .spacer {
+	margin-bottom: 0px !important;
+}
+
 /*——————————————————————————————————————————————
              SUBREDDIT COLOR SCHEME
 For aesthetic purposes, please keep everything
@@ -3784,6 +3788,7 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 /*POKEMON FLAIRS*/
 
 	/*willster191*/
+	
 	.flair-christmaslatios::before {
 		background-position: 0px 0px;
 		background-image: url(%%modsprites%%);
@@ -3793,6 +3798,17 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 	.flair-tapukoko::before {
 		background-position: 0px -50px;
 		background-image: url(%%modsprites%%);
+	}
+	
+	.flair-shinymimikyu::before {
+		background-position: 0px -100px;
+		height: 28px;
+		background-image: url(%%modsprites%%);
+	}
+	
+	.flair-shinymegadiancie::before {
+		background-position: 0px -150px;
+		background-image: url(%%modsprites%%)
 	}
 
 	/*Vovvy (robertoxmed)*/
@@ -3809,6 +3825,13 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 
 	.flair-scrafty::before {
 		background-position: -50px -100px;
+		background-image: url(%%modsprites%%);
+	}
+	
+	.flair-megagengar::before {
+		background-position: -50px -150px;
+		width: 40px;
+		height: 40px;
 		background-image: url(%%modsprites%%);
 	}
 
@@ -3828,6 +3851,11 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 
 	.flair-stufful::before {
 		background-position: -150px -50px;
+		background-image: url(%%modsprites%%);
+	}
+	
+	.flair-shinypumpkaboo::before {
+		background-position: -150px -100px;
 		background-image: url(%%modsprites%%);
 	}
 
