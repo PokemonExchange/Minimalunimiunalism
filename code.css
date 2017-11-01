@@ -3809,17 +3809,6 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-image: url(%%modsprites%%)
 	}
 
-	.flair-shinymimikyu::before {
-		background-position: 0px -100px;
-		height: 28px;
-		background-image: url(%%modsprites%%);
-	}
-
-	.flair-shinymegadiancie::before {
-		background-position: 0px -150px;
-		background-image: url(%%modsprites%%)
-	}
-
 	/*Vovvy (robertoxmed)*/
 
 	.flair-tapufini::before {
