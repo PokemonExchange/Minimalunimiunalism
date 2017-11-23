@@ -1124,12 +1124,12 @@ body.comments-page .sitetable {
 
 .commentarea > .usertext {
 	background-color: #F8F8F8;
-	border-radius: 2px 2px 2px 2px!important;
+	border-radius: 0px 0px 2px 2px;
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
 	overflow: visible;
-	padding-top: 65px;
+	padding-top: 165px;
 	padding-left: 29px;
-	margin-top: -62px;
+	margin-top: -160px;
 	margin-left: -10px;
 	margin-right: -10px;
  }
@@ -1137,8 +1137,9 @@ body.comments-page .sitetable {
 .res .commentarea > .usertext {
 	position: relative;
 	top: -110px;
-	margin-bottom: -98px;
-	margin-top: 62px;
+	margin-bottom: -90px;
+	margin-top: -160px;
+	padding-top: 136px;
 	clear: left;
  }
 
@@ -3457,10 +3458,6 @@ html[lang="nm"] .side .md h3 a[href*="http://nm.reddit.com/r/pokemonexchange"] {
 	display: none!important;
 }
 
-.content .spacer {
-	margin-bottom: 0px !important;
-}
-
 /*——————————————————————————————————————————————
              SUBREDDIT COLOR SCHEME
 For aesthetic purposes, please keep everything
@@ -3798,17 +3795,6 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-image: url(%%modsprites%%);
 	}
 
-	.flair-shinymimikyu::before {
-		background-position: 0px -100px;
-		height: 28px;
-		background-image: url(%%modsprites%%);
-	}
-
-	.flair-shinymegadiancie::before {
-		background-position: 0px -150px;
-		background-image: url(%%modsprites%%)
-	}
-
 	/*Vovvy (robertoxmed)*/
 
 	.flair-tapufini::before {
@@ -3826,18 +3812,10 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-image: url(%%modsprites%%);
 	}
 
-	.flair-megagengar::before {
-		background-position: -50px -150px;
-		width: 40px;
-		height: 40px;
+	.flair-manenecrozma::before {
+		background-position: -52px -200px;
 		background-image: url(%%modsprites%%);
-	}
-
-	.flair-megagengar::before {
-		background-position: -50px -150px;
-		width: 40px;
-		height: 40px;
-		background-image: url(%%modsprites%%);
+		width: 36px;
 	}
 
 	/*Ida (Merryfellows)*/
@@ -3859,13 +3837,8 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-image: url(%%modsprites%%);
 	}
 
-	.flair-shinypumpkaboo::before {
-		background-position: -150px -100px;
-		background-image: url(%%modsprites%%);
-	}
-
-	.flair-shinypumpkaboo::before {
-		background-position: -150px -100px;
+	.flair-shinynihilego::before {
+		background-position: -150px -150px;
 		background-image: url(%%modsprites%%);
 	}
 
@@ -3882,6 +3855,12 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-image: url(%%modsprites%%);
 		width: 36px;
 	}
+
+	.flair-shinypoipole::before {
+		background-position: -404px -50px;
+		background-image: url(%%modsprites%%);
+	}
+
 
 	/*Bots*/
 
@@ -4127,7 +4106,7 @@ html[lang="nm"] .nsfw-stamp acronym:after,.res-nightmode .nsfw-stamp acronym:aft
 	color: rgb(130, 130, 130);
 }
 
-.res-nightmode .comments-page .link, .res-nightmode .listing-page div.content, .res-nightmode .submit-page div.content, .res-nightmode .subreddit-rules-page, .res-nightmode .wiki-page div.content {
+.res-nightmode .commentarea, .res-nightmode .comments-page .link, .res-nightmode .listing-page div.content, .res-nightmode .submit-page div.content, .res-nightmode .subreddit-rules-page, .res-nightmode .wiki-page div.content {
 	background-color: #333;
 	box-shadow: 0 1px 3px 1px #000;
 }
