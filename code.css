@@ -3803,6 +3803,7 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 
 	.flair-shinymegadiancie::before {
 		background-position: 0px -150px;
+		width: 36px;
 	}
 
 	/*Vovvy (robertoxmed)*/
@@ -3815,8 +3816,9 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-position: -50px -50px;
 	}
 
-	.flair-scrafty::before {
+	.flair-megametagross::before {
 		background-position: -50px -100px;
+		width: 36px;
 	}
 
 	.flair-manenecrozma::before {
