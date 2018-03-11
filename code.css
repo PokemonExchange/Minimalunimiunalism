@@ -3864,6 +3864,12 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 		background-position: -404px -50px;
 	}
 
+	/*ValarEnki*/
+
+	.flair-shinysandygast::before {
+		background-position: -100px -50px;
+	}
+
 
 	/*Bots*/
 
