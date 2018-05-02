@@ -3869,7 +3869,20 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 	/*ValarEnki*/
 
 	.flair-shinysandygast::before {
-		background-position: -100px -50px;
+		background-position: -450px 0px;
+	}
+
+	/*Lightning00*/
+
+	.flair-shinyrayquaza::before {
+		background-position: -500px 0px;
+		width: 40px;
+	}
+
+	/*GoodMuse*/
+
+	.flair-shinyglaceon::before {
+		background-position: -550px 0px;
 	}
 
 
