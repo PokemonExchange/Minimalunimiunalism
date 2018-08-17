@@ -3829,7 +3829,7 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 	/*Ida (Merryfellows)*/
 
 	.flair-marowak::before {
-		background-position: -100px 0px;
+		background-position: -350px -156px;
 	}
 
 	/*Anna (froakiedokie)*/
@@ -3870,6 +3870,10 @@ a[href^="#pk-"], a[href^="#bs-"], a[href^="#ref-"] {
 
 	.flair-shinysandygast::before {
 		background-position: -450px 0px;
+	}
+
+	.flair-megahoundoom::before {
+		background-position: -448px -97px;
 	}
 
 	/*Lightning00*/
